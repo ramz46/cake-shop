@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Maison Élysée — Inquire about bespoke wedding cake commissions, private studio consultations, and service area delivery." />
+  <title>Contact &amp; Studio Consultation | Maison Élysée Luxury Wedding Cakes</title>
+
+  <link rel="icon" href="assets/images/logo-elysee.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+  <!-- Anti-Flash Preload Script -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('maison_elysee_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        var savedDir = localStorage.getItem('maison_elysee_dir') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        localStorage.removeItem('maison_elysee_lang');
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-font-style="haute-editorial">
+  <!-- Ambient Luxury Cursor Spotlight (Award-Winning Agency Experience) -->
+  <div class="luxury-cursor-aura" id="luxuryCursorAura" aria-hidden="true"></div>
+
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Site Preloader / Loading Area -->
+  <div id="sitePreloader" class="site-preloader" aria-hidden="true" role="status" aria-label="Loading Maison Élysée">
+    <div class="preloader-inner">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Emblem" class="preloader-logo-img" width="88" height="88" />
+        <div class="preloader-aura"></div>
+      </div>
+      <div class="preloader-brand">
+        <span class="preloader-title">Maison Élysée</span>
+        <span class="preloader-sub">Luxury Cake Studio • Paris</span>
+      </div>
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Maison Élysée Homepage">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="38" height="38" />
+        <div class="brand-text-wrap">
+          <span class="brand-title">Maison Élysée</span>
+          <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+        <a href="portfolio.html" class="nav-link" data-i18n="navPortfolio">Portfolio</a>
+        <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
+        <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
+        <a href="tasting.html" class="nav-link" data-i18n="navTasting">Tasting Studio</a>
+        <a href="blog.html" class="nav-link" data-i18n="navBlog">Journal</a>
+        <a href="contact.html" class="nav-link active" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- In-Navbar Theme & Direction Controls -->
+        <div class="nav-controls">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode" title="Switch Theme">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL" title="Switch between LTR and RTL layout">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+
+        <a href="tasting.html" class="btn btn-primary btn-sm nav-cta-btn"><span class="btn-sparkle">✦</span> <span data-i18n="btnBookTasting">Reserve Tasting</span></a>
+        <button class="menu-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-panel">
+      <div>
+        <div class="drawer-header">
+          <a href="index.html" class="brand-logo drawer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="32" height="32" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.35rem;">Maison Élysée</span>
+              <span class="brand-subtitle" style="font-size: 0.6rem;">Luxury Cakes</span>
+            </div>
+          </a>
+          <button class="drawer-close" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="drawer-nav">
+          <li><a href="index.html" class="drawer-nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="drawer-nav-link">Portfolio &amp; Gallery</a></li>
+          <li><a href="about.html" class="drawer-nav-link">About Studio &amp; Story</a></li>
+          <li><a href="services.html" class="drawer-nav-link">Services &amp; Offerings</a></li>
+          <li><a href="tasting.html" class="drawer-nav-link">Tasting Appointments</a></li>
+          <li><a href="blog.html" class="drawer-nav-link">The Studio Journal</a></li>
+          <li><a href="contact.html" class="drawer-nav-link active">Contact &amp; Coverage</a></li>
+        </ul>
+
+        <div class="drawer-controls" style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-hairline); display: flex; flex-wrap: wrap; gap: 0.65rem;">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+      </div>
+      <div style="padding-top: 2rem; border-top: 1px solid var(--border-hairline);">
+        <a href="tasting.html" class="btn btn-gold btn-lg" style="width: 100%;">Book Tasting Experience</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Luxury Page Hero Section -->
+    <section class="page-hero" aria-label="Contact Introduction">
+      <!-- Atmospheric Ambient Lighting Aurora -->
+      <div class="hero-ambient-aurora" aria-hidden="true"></div>
+      <!-- Floating Gold Dust Particles -->
+      <div class="hero-dust-container" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="page-hero-grid">
+          <div class="page-hero-content">
+            <span class="subheading-editorial">Dialogue &amp; Commission</span>
+            <h1 class="page-hero-headline">Commence Your <span class="gradient-emerald-gold">Bespoke Commission</span></h1>
+            <p class="page-hero-lead">
+              Whether inquiring about an architectural tiered centerpiece, an opulent dessert table, or a private champagne tasting, our culinary artisans are at your disposal.
+            </p>
+
+            <!-- Response Time Expectation Banner in Hero -->
+            <div class="contact-response-banner" style="background: var(--bg-secondary); border: 1px solid var(--border-strong); border-radius: var(--radius-pill); padding: 0.85rem 1.5rem; display: inline-flex; align-items: center; gap: 0.75rem; font-size: 0.875rem; color: var(--text-primary); margin-bottom: 1.5rem;">
+              <span style="color: var(--accent-gold);">✦</span>
+              <span><strong>Response Commitment:</strong> Every inquiry is personally reviewed by Chef Geneviève within <strong>24–48 hours</strong>.</span>
+            </div>
+
+            <!-- Hero Feature Pills -->
+            <div class="page-hero-pills">
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> Private Studio by Appointment
+              </span>
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> Worldwide Destination Coverage
+              </span>
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> 2026 Season Bookings Open
+              </span>
+            </div>
+          </div>
+
+          <div class="page-hero-image-wrapper">
+            <div class="page-hero-image-frame">
+              <img src="assets/images/hero-contact.jpg" alt="Maison Élysée bespoke luxury wedding cake centerpiece displayed beneath cascading crystal chandeliers" loading="eager" />
+            </div>
+            <!-- Floating Accolade -->
+            <div class="floating-badge">
+              <div class="floating-badge-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <div>
+                <div class="floating-badge-title">The Manhattan Studio</div>
+                <div class="floating-badge-sub">Private Sensory Tasting Suite</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Contact & Form Section -->
+    <section class="section" aria-label="Consultation Inquiry Form">
+      <div class="container">
+        <div class="grid-2 contact-main-grid" style="align-items: flex-start; gap: 4rem;">
+          
+          <!-- Column 1: Studio Contact Details & Service Area Map -->
+          <div>
+            <div class="service-tab-media" style="margin-bottom: 2rem;">
+              <img src="assets/images/hero-about.jpg" alt="Maison Élysée private studio workspace and consultation room" />
+            </div>
+            <span class="subheading-editorial">The Private Studio</span>
+            <h2>Studio Location &amp; Visiting Hours</h2>
+            <p style="margin-top: 1rem; line-height: 1.7;">
+              Tasting sessions and design consultations are hosted exclusively by private appointment to guarantee our undivided attention for each couple.
+            </p>
+
+            <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--bg-secondary); display: flex; align-items: center; justify-content: center; color: var(--accent-gold); flex-shrink: 0;">
+                  📍
+                </div>
+                <div>
+                  <strong style="color: var(--text-primary); font-size: 1rem;">Flagship Studio &amp; Tasting Suite</strong>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.2rem;">
+                    740 Grand Avenue, Suite 400<br />
+                    Culinary Arts District, NY 10014
+                  </p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--bg-secondary); display: flex; align-items: center; justify-content: center; color: var(--accent-gold); flex-shrink: 0;">
+                  ✉️
+                </div>
+                <div>
+                  <strong style="color: var(--text-primary); font-size: 1rem;">Concierge Inquiries</strong>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.2rem;">
+                    <a href="mailto:concierge@maisonelysee.com" style="color: var(--accent-gold); text-decoration: underline;">concierge@maisonelysee.com</a><br />
+                    Direct: +1 (212) 555-0842
+                  </p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--bg-secondary); display: flex; align-items: center; justify-content: center; color: var(--accent-gold); flex-shrink: 0;">
+                  ⏱️
+                </div>
+                <div>
+                  <strong style="color: var(--text-primary); font-size: 1rem;">Studio Appointment Hours</strong>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.2rem;">
+                    Tuesday – Saturday: 10:00 AM – 6:00 PM<br />
+                    Sunday &amp; Monday: Dedicated on-site wedding installations
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Service Area & Delivery Calculator -->
+            <div style="margin-top: 3rem; background: var(--bg-surface); border: 1px solid var(--border-strong); border-radius: var(--radius-md); padding: 2rem; box-shadow: var(--shadow-subtle);">
+              <span class="subheading-editorial">Logistics Coverage</span>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">Service Area &amp; Venue Distance Estimator</h3>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem;">
+                Select your venue region to view our white-glove transport specifications:
+              </p>
+
+              <div class="form-group" style="margin-bottom: 1.25rem;">
+                <label for="deliveryZoneSelect" class="form-label">Wedding Venue Region</label>
+                <select id="deliveryZoneSelect" class="form-select">
+                  <option value="metro">Zone 1: Greater Metropolitan (0 – 30 miles)</option>
+                  <option value="country">Zone 2: Wine Country &amp; Manor Estates (30 – 120 miles)</option>
+                  <option value="destination">Zone 3: Destination Weddings &amp; International</option>
+                </select>
+              </div>
+
+              <div id="deliveryDetailsBox" style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 1.25rem; font-size: 0.85rem; line-height: 1.6;">
+                <strong id="zoneTitle" style="color: var(--accent-gold); font-size: 0.95rem; display: block; margin-bottom: 0.25rem;">Zone 1: Greater Metro Coverage</strong>
+                <p id="zoneDesc" style="color: var(--text-secondary); margin: 0;">
+                  Direct climate-controlled delivery in our refrigerated vehicle. Includes 2-hour on-site setup window, structural locking, and coordination with banquet manager. Delivery from $175 (Complimentary for 4+ tier cakes).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Consultation Inquiry Form & White-Glove Installation Showcase -->
+          <div class="contact-form-column" style="display: flex; flex-direction: column; gap: 2rem;">
+            
+            <div class="card-luxury" style="padding: clamp(2rem, 4vw, 3rem); border-color: var(--border-strong);">
+              <span class="subheading-editorial">Commission Inquiry</span>
+              <h2 style="font-size: 1.85rem; margin-bottom: 1rem;">Wedding Commission Form</h2>
+              <p style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                Kindly complete the fields below to verify our studio availability for your celebration date.
+              </p>
+
+              <form class="form-luxury" id="contactInquiryForm">
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="clientNames" class="form-label">Couple Full Names *</label>
+                    <input type="text" id="clientNames" class="form-input" placeholder="e.g. Julian and Claire St Laurent" pattern="^[A-Za-z\u00C0-\u024F\s]+$" title="Please enter alphabet letters and spaces only" autocomplete="name" required />
+                    <small style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">Alphabets only (A–Z)</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="clientEmail" class="form-label">Email Address *</label>
+                    <input type="email" id="clientEmail" class="form-input" placeholder="claire@example.com" required />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="clientPhone" class="form-label">Phone Number *</label>
+                    <input type="tel" id="clientPhone" class="form-input" placeholder="5550192834" inputmode="numeric" pattern="^[0-9]+$" title="Please enter numbers only" autocomplete="tel" required />
+                    <small style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">Numbers only (0–9)</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="clientWeddingDate" class="form-label">Wedding Date *</label>
+                    <input type="date" id="clientWeddingDate" class="form-input" required />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="clientVenue" class="form-label">Venue Name &amp; City *</label>
+                    <input type="text" id="clientVenue" class="form-input" placeholder="e.g. The Biltmore Estate, Asheville" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="clientGuestCount" class="form-label">Estimated Guest Count</label>
+                    <input type="number" id="clientGuestCount" class="form-input" placeholder="e.g. 150" min="20" max="600" />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="clientBudget" class="form-label">Estimated Confectionery Investment</label>
+                    <select id="clientBudget" class="form-select">
+                      <option value="1200-2500">$1,200 – $2,500 (Petite to Grand Tiers)</option>
+                      <option value="2500-4500">$2,500 – $4,500 (Sculptural Tiers + Favors)</option>
+                      <option value="4500+">$4,500+ (Monumental Statement + Full Dessert Table)</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="clientServices" class="form-label">Services of Interest</label>
+                    <select id="clientServices" class="form-select">
+                      <option value="wedding-cake">Bespoke Wedding Cake</option>
+                      <option value="dessert-table">Curated French Dessert Table</option>
+                      <option value="both">Both Wedding Cake &amp; Dessert Table</option>
+                      <option value="favors">Guest Favors &amp; Welcome Gifts</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="clientVision" class="form-label">Design Vision, Specific Styles or Story</label>
+                  <textarea id="clientVision" class="form-textarea" rows="4" placeholder="Tell us about your wedding aesthetic, color palette, floral varieties, or any specific design in our portfolio you love..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-gold btn-lg" style="width: 100%; margin-top: 0.5rem;">
+                  Send Bespoke Commission Inquiry
+                </button>
+              </form>
+            </div>
+
+            <!-- Luxury Installation & On-Site Assembly Showcase (Fills Grid Space) -->
+            <div class="card-luxury reveal-fade-up" style="padding: 0; overflow: hidden; border-color: var(--border-strong);" data-tilt="true">
+              <div style="position: relative; height: 230px; overflow: hidden;">
+                <img src="assets/images/delivery-setup.jpg" alt="Maison Élysée white-glove on-site tiered cake installation and floral setup" style="width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow);" />
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(13, 26, 20, 0.9) 0%, rgba(13, 26, 20, 0.25) 60%, transparent 100%);"></div>
+                <div style="position: absolute; bottom: 1.25rem; left: 1.5rem; right: 1.5rem; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 0.5rem;">
+                  <span class="badge badge-gold" style="font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;">White-Glove Protocol</span>
+                  <span style="font-size: 0.78rem; color: #f5f0eb; display: inline-flex; align-items: center; gap: 0.35rem;">
+                    <span style="color: var(--accent-gold);">✦</span> 100% On-Time Setup Record
+                  </span>
+                </div>
+              </div>
+
+              <div style="padding: 1.85rem 2rem 2rem;">
+                <span class="subheading-editorial">Atelier Precision</span>
+                <h3 style="font-size: 1.35rem; margin-top: 0.25rem; margin-bottom: 0.75rem;">White-Glove Delivery &amp; On-Site Artistry</h3>
+                <p style="font-size: 0.885rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 1.35rem;">
+                  Every multi-tiered commission is escorted in our custom climate-controlled refrigerated transport equipped with pneumatic air-ride suspension. Chef Geneviève and our master artisans arrive 3 hours prior to your reception to conduct structural anchor locking, hand-place delicate fresh sugar blossoms, and perform final 24K gold leaf gilding under ambient venue lighting.
+                </p>
+
+                <!-- 3 Highlight Features -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 0.75rem; margin-bottom: 1.35rem;">
+                  <div style="background: var(--bg-secondary); border: 1px solid var(--border-hairline); border-radius: var(--radius-sm); padding: 0.85rem 0.6rem; text-align: center;">
+                    <span style="color: var(--accent-gold); font-size: 1.15rem; display: block; margin-bottom: 0.2rem;">❄️ 58°F</span>
+                    <strong style="font-size: 0.76rem; display: block; color: var(--text-primary); margin-bottom: 0.15rem;">Climate Vault</strong>
+                    <span style="font-size: 0.7rem; color: var(--text-muted);">Refrigerated transit</span>
+                  </div>
+                  <div style="background: var(--bg-secondary); border: 1px solid var(--border-hairline); border-radius: var(--radius-sm); padding: 0.85rem 0.6rem; text-align: center;">
+                    <span style="color: var(--accent-gold); font-size: 1.15rem; display: block; margin-bottom: 0.2rem;">🔒 Dual-Lock</span>
+                    <strong style="font-size: 0.76rem; display: block; color: var(--text-primary); margin-bottom: 0.15rem;">Steel Armature</strong>
+                    <span style="font-size: 0.7rem; color: var(--text-muted);">Zero-wobble security</span>
+                  </div>
+                  <div style="background: var(--bg-secondary); border: 1px solid var(--border-hairline); border-radius: var(--radius-sm); padding: 0.85rem 0.6rem; text-align: center;">
+                    <span style="color: var(--accent-gold); font-size: 1.15rem; display: block; margin-bottom: 0.2rem;">🌸 On-Site</span>
+                    <strong style="font-size: 0.76rem; display: block; color: var(--text-primary); margin-bottom: 0.15rem;">Floral Styling</strong>
+                    <span style="font-size: 0.7rem; color: var(--text-muted);">Direct florist sync</span>
+                  </div>
+                </div>
+
+                <!-- Footer Assurance Bar -->
+                <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 1.1rem; border-top: 1px solid var(--border-hairline); font-size: 0.85rem; flex-wrap: wrap; gap: 0.5rem;">
+                  <span style="color: var(--text-secondary); display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <span style="color: var(--accent-gold);">✦</span> Dedicated Wedding-Day Lead Artisan
+                  </span>
+                  <a href="tasting.html" class="link-luxury" style="color: var(--accent-gold); font-weight: 500; display: inline-flex; align-items: center; gap: 0.35rem;">
+                    <span>Schedule Studio Tasting</span>
+                    <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="44" height="44" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.6rem;">Maison Élysée</span>
+              <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; max-width: 340px; margin-bottom: 1.5rem;">
+            Bespoke wedding cakes, organic sugar botanical sculptures, and dessert tables for luxury celebrations worldwide.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio &amp; Gallery</a></li>
+            <li><a href="about.html" class="footer-link">The Studio Story</a></li>
+            <li><a href="services.html" class="footer-link">Bespoke Offerings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Experiences</h4>
+          <ul class="footer-nav">
+            <li><a href="tasting.html" class="footer-link">Tasting Appointments</a></li>
+            <li><a href="tasting.html#flavor-builder" class="footer-link">Tasting Box Builder</a></li>
+            <li><a href="blog.html" class="footer-link">Studio Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Coverage</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">The Studio Journal</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+            Subscribe to receive our annual bridal dessert trend forecast and seasonal tasting release dates.
+          </p>
+          <form class="newsletter-form" style="display: flex; gap: 0.5rem;" aria-label="Newsletter subscription form">
+            <input type="email" placeholder="Your email address" required class="form-input" style="padding: 0.6rem 0.85rem; font-size: 0.85rem;" aria-label="Email address" />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Maison Élysée Luxury Cake Studio. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Commission</a>
+          <a href="#" class="footer-link">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Contact page specific logic: prefilling design parameter & delivery zone calculator
+    document.addEventListener('DOMContentLoaded', () => {
+      // Prefill if coming from portfolio or other page
+      const params = new URLSearchParams(window.location.search);
+      const designParam = params.get('design');
+      if (designParam) {
+        const visionField = document.getElementById('clientVision');
+        if (visionField) {
+          visionField.value = `I am inquiring specifically regarding the "${decodeURIComponent(designParam)}" design from your portfolio archives.`;
+        }
+      }
+
+      // Delivery Zone Estimator
+      const zoneSelect = document.getElementById('deliveryZoneSelect');
+      const zoneTitle = document.getElementById('zoneTitle');
+      const zoneDesc = document.getElementById('zoneDesc');
+
+      const zoneData = {
+        metro: {
+          title: 'Zone 1: Greater Metropolitan (0 – 30 miles)',
+          desc: 'Direct climate-controlled delivery in our refrigerated vehicle. Includes 2-hour on-site setup window, structural locking, and coordination with banquet manager. Delivery from $175 (Complimentary for 4+ tier cakes).'
+        },
+        country: {
+          title: 'Zone 2: Wine Country & Manor Estates (30 – 120 miles)',
+          desc: 'Specialized long-range refrigerated transport with custom air suspension. Includes dual-chef on-site assembly, sugar flower rehydration, and floristry integration. Quoted on mileage (typically $350 – $650).'
+        },
+        destination: {
+          title: 'Zone 3: Destination Weddings & International',
+          desc: 'Chef Geneviève and our master pastry architect travel directly to your destination venue 48 hours prior to bake, assemble, and style on-site in your hotel or private estate kitchen. Inquire for bespoke travel quotation.'
+        }
+      };
+
+      if (zoneSelect && zoneTitle && zoneDesc) {
+        zoneSelect.addEventListener('change', (e) => {
+          const sel = zoneData[e.target.value];
+          if (sel) {
+            zoneTitle.textContent = sel.title;
+            zoneDesc.textContent = sel.desc;
+          }
+        });
+      }
+
+      // Contact Form Restrictions & Submission
+      const form = document.getElementById('contactInquiryForm');
+      const clientNamesInput = document.getElementById('clientNames');
+      const clientPhoneInput = document.getElementById('clientPhone');
+
+      // Restrict Couple Names to alphabets and spaces
+      if (clientNamesInput) {
+        clientNamesInput.addEventListener('keydown', (e) => {
+          if (
+            e.key === 'Backspace' || e.key === 'Delete' || e.key === 'Tab' || e.key === 'Escape' ||
+            e.key === 'Enter' || e.key === 'ArrowLeft' || e.key === 'ArrowRight' || e.key === 'ArrowUp' ||
+            e.key === 'ArrowDown' || e.key === 'Home' || e.key === 'End' || e.ctrlKey || e.metaKey
+          ) return;
+          if (e.key === ' ' || /^[a-zA-Z\u00C0-\u024F]$/.test(e.key)) return;
+          e.preventDefault();
+        });
+
+        clientNamesInput.addEventListener('input', () => {
+          const sanitized = clientNamesInput.value.replace(/[^a-zA-Z\u00C0-\u024F\s]/g, '');
+          if (clientNamesInput.value !== sanitized) clientNamesInput.value = sanitized;
+        });
+
+        clientNamesInput.addEventListener('paste', (e) => {
+          const pasteText = (e.clipboardData || window.clipboardData)?.getData('text') || '';
+          if (/[^a-zA-Z\u00C0-\u024F\s]/.test(pasteText)) {
+            e.preventDefault();
+            const sanitized = pasteText.replace(/[^a-zA-Z\u00C0-\u024F\s]/g, '');
+            const start = clientNamesInput.selectionStart || 0;
+            const end = clientNamesInput.selectionEnd || 0;
+            const currentVal = clientNamesInput.value;
+            clientNamesInput.value = currentVal.substring(0, start) + sanitized + currentVal.substring(end);
+            clientNamesInput.selectionStart = clientNamesInput.selectionEnd = start + sanitized.length;
+            clientNamesInput.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        });
+      }
+
+      // Restrict Phone Number to numbers only
+      if (clientPhoneInput) {
+        clientPhoneInput.addEventListener('keydown', (e) => {
+          if (
+            e.key === 'Backspace' || e.key === 'Delete' || e.key === 'Tab' || e.key === 'Escape' ||
+            e.key === 'Enter' || e.key === 'ArrowLeft' || e.key === 'ArrowRight' || e.key === 'ArrowUp' ||
+            e.key === 'ArrowDown' || e.key === 'Home' || e.key === 'End' || e.ctrlKey || e.metaKey
+          ) return;
+          if (/^[0-9]$/.test(e.key)) return;
+          e.preventDefault();
+        });
+
+        clientPhoneInput.addEventListener('input', () => {
+          const sanitized = clientPhoneInput.value.replace(/[^0-9]/g, '');
+          if (clientPhoneInput.value !== sanitized) clientPhoneInput.value = sanitized;
+        });
+
+        clientPhoneInput.addEventListener('paste', (e) => {
+          const pasteText = (e.clipboardData || window.clipboardData)?.getData('text') || '';
+          if (/[^0-9]/.test(pasteText)) {
+            e.preventDefault();
+            const sanitized = pasteText.replace(/[^0-9]/g, '');
+            const start = clientPhoneInput.selectionStart || 0;
+            const end = clientPhoneInput.selectionEnd || 0;
+            const currentVal = clientPhoneInput.value;
+            clientPhoneInput.value = currentVal.substring(0, start) + sanitized + currentVal.substring(end);
+            clientPhoneInput.selectionStart = clientPhoneInput.selectionEnd = start + sanitized.length;
+            clientPhoneInput.dispatchEvent(new Event('input', { bubbles: true }));
+          }
+        });
+      }
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = clientNamesInput?.value.trim() || '';
+          const phone = clientPhoneInput?.value.trim() || '';
+
+          // Validate alphabet only for name
+          if (!/^[a-zA-Z\u00C0-\u024F\s]+$/.test(name)) {
+            if (window.showToast) {
+              window.showToast('Please enter only alphabet letters for Couple Full Names.', 'error');
+            }
+            clientNamesInput?.focus();
+            return;
+          }
+
+          // Validate numbers only for phone
+          if (!/^[0-9]+$/.test(phone)) {
+            if (window.showToast) {
+              window.showToast('Please enter only numbers for the Phone Number.', 'error');
+            }
+            clientPhoneInput?.focus();
+            return;
+          }
+
+          if (window.showToast) {
+            window.showToast(`Thank you, ${name}! Your commission inquiry has been sent to Chef Geneviève. We will respond within 24–48 hours.`, 'success');
+          }
+          form.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maison Élysée — Luxury cakes and bespoke wedding centerpieces, sculptural sugar art, and curated dessert tables for luxury celebrations." />
+  <title>Maison Élysée | Luxury Wedding Cakes & Fine Confections</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo-elysee.svg" type="image/svg+xml" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+  <!-- Anti-Flash Preload Script -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('maison_elysee_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        var savedDir = localStorage.getItem('maison_elysee_dir') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        localStorage.removeItem('maison_elysee_lang');
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-font-style="haute-editorial">
+  <!-- Ambient Luxury Cursor Spotlight (Award-Winning Agency Experience) -->
+  <div class="luxury-cursor-aura" id="luxuryCursorAura" aria-hidden="true"></div>
+
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Site Preloader / Loading Area -->
+  <div id="sitePreloader" class="site-preloader" aria-hidden="true" role="status" aria-label="Loading Maison Élysée">
+    <div class="preloader-inner">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Emblem" class="preloader-logo-img" width="88" height="88" />
+        <div class="preloader-aura"></div>
+      </div>
+      <div class="preloader-brand">
+        <span class="preloader-title">Maison Élysée</span>
+        <span class="preloader-sub">Luxury Cake Studio • Paris</span>
+      </div>
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Maison Élysée Homepage">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="38" height="38" />
+        <div class="brand-text-wrap">
+          <span class="brand-title">Maison Élysée</span>
+          <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link active" data-i18n="navHome">Home</a>
+        <a href="portfolio.html" class="nav-link" data-i18n="navPortfolio">Portfolio</a>
+        <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
+        <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
+        <a href="tasting.html" class="nav-link" data-i18n="navTasting">Tasting Studio</a>
+        <a href="blog.html" class="nav-link" data-i18n="navBlog">Journal</a>
+        <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- In-Navbar Theme & Direction Controls -->
+        <div class="nav-controls">
+          <!-- Light/Dark Mode Switcher -->
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode" title="Switch between Light and Dark mode">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+
+          <!-- RTL / LTR Layout Switcher -->
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL" title="Switch between LTR and RTL layout">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+
+        <a href="tasting.html" class="btn btn-primary btn-sm nav-cta-btn magnetic-btn"><span class="btn-sparkle">✦</span> <span data-i18n="btnBookTasting">Reserve Tasting</span></a>
+        <button class="menu-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-panel">
+      <div>
+        <div class="drawer-header">
+          <a href="index.html" class="brand-logo drawer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="32" height="32" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.35rem;">Maison Élysée</span>
+              <span class="brand-subtitle" style="font-size: 0.6rem;">Luxury Cakes</span>
+            </div>
+          </a>
+          <button class="drawer-close" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="drawer-nav">
+          <li><a href="index.html" class="drawer-nav-link active">Home</a></li>
+          <li><a href="portfolio.html" class="drawer-nav-link">Portfolio &amp; Gallery</a></li>
+          <li><a href="about.html" class="drawer-nav-link">About Studio &amp; Story</a></li>
+          <li><a href="services.html" class="drawer-nav-link">Services &amp; Offerings</a></li>
+          <li><a href="tasting.html" class="drawer-nav-link">Tasting Appointments</a></li>
+          <li><a href="blog.html" class="drawer-nav-link">The Studio Journal</a></li>
+          <li><a href="contact.html" class="drawer-nav-link">Contact &amp; Coverage</a></li>
+        </ul>
+
+        <div class="drawer-controls" style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-hairline); display: flex; flex-wrap: wrap; gap: 0.65rem;">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+      </div>
+      <div style="padding-top: 1.5rem; border-top: 1px solid var(--border-hairline);">
+        <a href="tasting.html" class="btn btn-gold btn-lg" style="width: 100%;">Book Tasting Experience</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="section section-hero" aria-label="Hero Introduction">
+      <!-- Atmospheric Ambient Lighting Aurora -->
+      <div class="hero-ambient-aurora" aria-hidden="true"></div>
+      <!-- Floating Gold Dust Particles -->
+      <div class="hero-dust-container" aria-hidden="true"></div>
+
+      <div class="container">
+
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-couture-badge hero-flow-1">
+              <span class="live-dot-pulse"></span>
+              <span class="badge-text">Luxury Cake Studio &bull; Bespoke 2026 Commissions Open</span>
+            </div>
+            
+            <h1 class="hero-headline" aria-label="Sculpting Unforgettable Monuments in Sugar & 24K Gold.">
+              <span class="hero-line hero-line-1 hero-flow-2">
+                <span class="hero-mask-wrap"><span class="hero-word-reveal">Sculpting</span></span> 
+                <span class="hero-mask-wrap"><span class="gradient-emerald-gold hero-highlight-word hero-word-reveal">Unforgettable</span></span>
+              </span>
+              <span class="hero-line hero-line-2 hero-flow-3">
+                <span class="hero-mask-wrap"><span class="hero-word-reveal">Monuments</span></span> 
+                <span class="hero-mask-wrap"><span class="hero-word-reveal">in</span></span> 
+                <span class="hero-script-nowrap"><span class="font-script hero-script-accent text-gold-shimmer hero-word-reveal">Sugar &amp; 24K Gold</span>.</span>
+              </span>
+            </h1>
+
+            <p class="hero-lead hero-flow-4">
+              Maison Élysée is a premier architectural cake studio sculpting bespoke wedding centerpieces, organic sugar botanicals, and curated luxury dessert tables for discerning celebrations worldwide.
+            </p>
+
+            <div class="hero-cta-group hero-flow-5">
+              <a href="tasting.html" class="btn btn-nyc-primary btn-lg magnetic-btn">
+                <span class="btn-icon">✦</span>
+                <span class="btn-text">Reserve Private Tasting</span>
+                <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="portfolio.html" class="btn btn-nyc-secondary btn-lg magnetic-btn">
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg>
+                <span class="btn-text">Explore Portfolio</span>
+              </a>
+            </div>
+
+            <div class="hero-stats-row hero-flow-6">
+              <div class="stat-item">
+                <span class="stat-number" data-target="450" data-suffix="+">450+</span>
+                <span class="stat-label">Weddings Elevated</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="100" data-suffix="%">100%</span>
+                <span class="stat-label">Scratch &amp; Artisanal</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="14" data-suffix="">14</span>
+                <span class="stat-label">Couture Flavors</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="12" data-suffix="">12</span>
+                <span class="stat-label">Editorial Honors</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper hero-flow-media">
+
+            <!-- Arched Cake Showcase Frame with Ambient Halo (100% Unobstructed Image) -->
+            <div class="hero-image-frame interactive-3d-tilt" id="heroCakeFrame" data-tilt="true">
+              <img id="heroCakeImg" src="assets/images/cake-aurore-blanche.jpg" alt="The White Dawn classical five-tier royal relief wedding cake" class="hero-main-cake-img" />
+              <div class="hero-frame-shimmer" aria-hidden="true"></div>
+            </div>
+
+            <!-- Interactive Content Card Below The Picture (Symmetrically Aligned) -->
+            <div class="hero-showcase-card interactive-3d-tilt" id="heroShowcaseCard" data-tilt="true">
+              <div class="showcase-card-header">
+                <div class="showcase-live-indicator">
+                  <span class="live-dot"></span>
+                  <span class="live-label">Featured Commission</span>
+                </div>
+                <span class="showcase-tier-pill" id="heroShowcaseTiers">5 Couture Tiers</span>
+              </div>
+
+              <div class="showcase-card-body">
+                <h3 class="showcase-cake-title" id="heroShowcaseTitle">The White Dawn</h3>
+                <p class="showcase-cake-meta" id="heroShowcaseMeta">Renaissance Raised Relief &amp; Scented Sugar Peonies</p>
+
+                <!-- Artisan Metric Pills with Refined Architectural SVGs -->
+                <div class="showcase-metrics-grid">
+                  <div class="metric-chip">
+                    <span class="metric-svg-wrap">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 21h18M4 18h16M6 18V9M10 18V9M14 18V9M18 18V9M12 3l9 6H3l9-6z"/></svg>
+                    </span>
+                    <div class="metric-text-group">
+                      <span class="metric-val" id="heroMetric1">Neoclassical</span>
+                      <span class="metric-lbl">Architecture</span>
+                    </div>
+                  </div>
+                  <div class="metric-chip">
+                    <span class="metric-svg-wrap">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2a5 5 0 0 1 5 5c0 3-5 8-5 8s-5-5-5-8a5 5 0 0 1 5-5z"/><circle cx="12" cy="7" r="1.5"/></svg>
+                    </span>
+                    <div class="metric-text-group">
+                      <span class="metric-val" id="heroMetric2">240+ Petals</span>
+                      <span class="metric-lbl">Sugar Botanicals</span>
+                    </div>
+                  </div>
+                  <div class="metric-chip">
+                    <span class="metric-svg-wrap">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </span>
+                    <div class="metric-text-group">
+                      <span class="metric-val" id="heroMetric3">48 Hours</span>
+                      <span class="metric-lbl">Artisan Craft</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tasting Flavor Profile Note -->
+                <div class="showcase-flavor-strip">
+                  <div class="flavor-chip-content">
+                    <span class="flavor-chip-title">✦ Tasting Notes</span>
+                    <span class="flavor-chip-desc" id="heroShowcaseFlavor">Tahitian Vanilla Bean, Champagne Jelly &amp; Alpine Peach Compote</span>
+                  </div>
+                </div>
+
+                <!-- Interactive 3-Creation Switcher (Symmetric Segmented Tab Grid) -->
+                <div class="showcase-switcher-wrap">
+                  <span class="switcher-hint">Select Commission Style</span>
+                  <div class="showcase-switcher-row" role="group" aria-label="Select Featured Cake Showcase">
+                    <button type="button" class="showcase-switch-btn active" data-cake="dawn" aria-label="Showcase The White Dawn">
+                      <span>1. White Dawn</span>
+                    </button>
+                    <button type="button" class="showcase-switch-btn" data-cake="rococo" aria-label="Showcase Venetian Rococo Palace">
+                      <span>2. Rococo</span>
+                    </button>
+                    <button type="button" class="showcase-switch-btn" data-cake="tuileries" aria-label="Showcase The Tuileries Garden">
+                      <span>3. Royal Garden</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="showcase-card-footer">
+                <a href="tasting.html" class="showcase-cta-link">
+                  <span>Reserve Private Tasting for This Style</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kinetic Editorial Ribbon -->
+    <div class="editorial-ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        <div class="ribbon-item">
+          <span>LUXURY WEDDING CAKES</span>
+          <span class="dot"></span>
+          <span>BOTANICAL SUGAR FLORISTRY</span>
+          <span class="dot"></span>
+          <span>ARCHITECTURAL TIERED MONOLITHS</span>
+          <span class="dot"></span>
+          <span>CURATED DESSERT TABLES</span>
+          <span class="dot"></span>
+          <span>WHITE-GLOVE NATIONWIDE LOGISTICS</span>
+          <span class="dot"></span>
+        </div>
+        <div class="ribbon-item">
+          <span>LUXURY WEDDING CAKES</span>
+          <span class="dot"></span>
+          <span>BOTANICAL SUGAR FLORISTRY</span>
+          <span class="dot"></span>
+          <span>ARCHITECTURAL TIERED MONOLITHS</span>
+          <span class="dot"></span>
+          <span>CURATED DESSERT TABLES</span>
+          <span class="dot"></span>
+          <span>WHITE-GLOVE NATIONWIDE LOGISTICS</span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editorial Press & Global Honors Banner -->
+    <div class="press-banner" aria-label="Editorial Press and Recognition">
+      <div class="container">
+        <p class="press-banner-title">Accredited &amp; Celebrated Across Global Bridal Media</p>
+        <div class="press-logo-row">
+          <span class="press-logo-item">Vogue Weddings</span>
+          <span class="press-logo-item">Architectural Digest</span>
+          <span class="press-logo-item">Harper’s Bazaar</span>
+          <span class="press-logo-item">Martha Stewart</span>
+          <span class="press-logo-item">Brides Magazine</span>
+          <span class="press-logo-item">Elle Gourmet</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Curated Cake Gallery (Featured Signature Creations) -->
+    <section class="section" aria-label="Curated Signature Collection">
+      <div class="container">
+        <div class="text-center max-w-prose" style="margin-bottom: 2.5rem;">
+          <span class="subheading-editorial" style="justify-content: center;">Signature Creations</span>
+          <h2>A Gallery of Architectural Splendor</h2>
+          <div class="ornament-flourish">❧ ✦ ❧</div>
+          <p style="margin-top: 0.5rem;">
+            Every creation is custom designed in tandem with our couples and wedding stylists, drawing inspiration from couture textiles, botanical gardens, and timeless European architecture.
+          </p>
+        </div>
+
+        <!-- Interactive Home Filter Bar -->
+        <div class="home-filter-bar" role="toolbar" aria-label="Filter signature creations by style">
+          <button class="home-filter-btn active" data-home-filter="all">
+            <span>All Signatures</span>
+            <span class="filter-count">6</span>
+          </button>
+          <button class="home-filter-btn" data-home-filter="classic">
+            <span>🏛️ Classic &amp; Grand</span>
+            <span class="filter-count">3</span>
+          </button>
+          <button class="home-filter-btn" data-home-filter="romantic">
+            <span>🌸 Romantic Floral</span>
+            <span class="filter-count">3</span>
+          </button>
+        </div>
+
+        <div class="grid-3" id="homeGalleryGrid">
+          <!-- Card 1: Classic & Grand -->
+          <article class="portfolio-card card-enter" data-category="classic" data-id="1" data-title="The White Dawn" data-tiers="4 Tiers (180 Servings)" data-flavors="Tahitian Vanilla Bean &amp; Alpine White Peach" data-venue="Villa Ephrussi de Rothschild, French Riviera" data-image="assets/images/cake-aurore-blanche.jpg" data-desc="A royal homage to classical architecture. Pristine ivory tiers ornamented with hand-piped neoclassical relief garlands, sculpted sugar swags, and scented ivory garden roses atop an antique silver pedestal.">
+            <div class="portfolio-img-box">
+              <img src="assets/images/cake-aurore-blanche.jpg" alt="The White Dawn classical 4-tier royal relief wedding cake" loading="lazy" />
+              <button class="portfolio-quick-view" aria-label="Inspect details for The White Dawn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span>Inspect Details</span>
+              </button>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta-header">
+                <span class="portfolio-tag">Classic &amp; Grand</span>
+                <span class="portfolio-tier-badge">4 Tiers • 180 Servings</span>
+                <span class="portfolio-venue-badge">French Riviera</span>
+              </div>
+              <h3 class="portfolio-title">The White Dawn</h3>
+              <p class="portfolio-meta">Renaissance Raised Relief &amp; Garden Roses</p>
+              <p class="portfolio-desc">
+                Architectural classical tiers draped in delicate hand-piped garlands and topped with porcelain sugar English roses, inspired by royal ballroom grandeur.
+              </p>
+              <div class="portfolio-card-footer">
+                <span class="portfolio-flavor-note" title="Tahitian Vanilla Bean &amp; Alpine White Peach">Tahitian Vanilla &amp; Peach</span>
+                <a href="portfolio.html" class="portfolio-link-btn">
+                  <span>View Style</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Classic & Grand -->
+          <article class="portfolio-card card-enter" data-category="classic" data-id="2" data-title="Venetian Rococo Palace" data-tiers="5 Tiers (240 Servings)" data-flavors="Champagne Brut Strawberry &amp; Whipped Vanilla Cream" data-venue="Villa d’Este, Lake Como" data-image="assets/images/cake-rococo.jpg" data-desc="Monumental 18th-century Venetian palace architecture with ornate baroque scrolls, cascading sugar pearl garlands, and antique silver pedestal presentation.">
+            <div class="portfolio-img-box">
+              <img src="assets/images/cake-rococo.jpg" alt="Venetian Rococo Palace 5-tier luxury Lambeth piped wedding cake" loading="lazy" />
+              <button class="portfolio-quick-view" aria-label="Inspect details for Venetian Rococo Palace">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span>Inspect Details</span>
+              </button>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta-header">
+                <span class="portfolio-tag">Classic &amp; Grand</span>
+                <span class="portfolio-tier-badge">5 Tiers • 240 Servings</span>
+                <span class="portfolio-venue-badge">Lake Como</span>
+              </div>
+              <h3 class="portfolio-title">Venetian Rococo Palace</h3>
+              <p class="portfolio-meta">Lambeth Royal Piping &amp; 24K Baroque Gold</p>
+              <p class="portfolio-desc">
+                Elaborate overpiped royal icing arches, hand-burnished 24-karat gold baroque scrollwork, and cascading sugar pearls created for palace celebrations.
+              </p>
+              <div class="portfolio-card-footer">
+                <span class="portfolio-flavor-note" title="Champagne Brut Strawberry &amp; Whipped Vanilla Cream">Champagne &amp; Strawberry</span>
+                <a href="portfolio.html" class="portfolio-link-btn">
+                  <span>View Style</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Classic & Grand -->
+          <article class="portfolio-card card-enter" data-category="classic" data-id="3" data-title="Grand Palace Garnier" data-tiers="6 Tiers (320 Servings)" data-flavors="Valrhona 70% Dark Chocolate &amp; Candied Orange" data-venue="Opéra Garnier Grand Foyer, Paris" data-image="assets/images/cake-opera-monolith.jpg" data-desc="Colossal architectural masterpiece with fluted sugar Corinthian columns, gilded balconies, sculpted cherub friezes, and Carrara marble base.">
+            <div class="portfolio-img-box">
+              <img src="assets/images/cake-opera-monolith.jpg" alt="Grand Palace Garnier monumental 6-tier European architectural palace wedding cake" loading="lazy" />
+              <button class="portfolio-quick-view" aria-label="Inspect details for Grand Palace Garnier">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span>Inspect Details</span>
+              </button>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta-header">
+                <span class="portfolio-tag">Classic &amp; Grand</span>
+                <span class="portfolio-tier-badge">6 Tiers • 320 Servings</span>
+                <span class="portfolio-venue-badge">Paris Opéra</span>
+              </div>
+              <h3 class="portfolio-title">Grand Palace Garnier</h3>
+              <p class="portfolio-meta">Corinthian Colonnade &amp; Gilded Laurel Swags</p>
+              <p class="portfolio-desc">
+                A towering European palace showpiece framed by miniature colonnades, Corinthian sugar pillars, neoclassical cherub reliefs, and gilded balconies.
+              </p>
+              <div class="portfolio-card-footer">
+                <span class="portfolio-flavor-note" title="Valrhona 70% Dark Chocolate &amp; Candied Orange">Valrhona 70% &amp; Orange</span>
+                <a href="portfolio.html" class="portfolio-link-btn">
+                  <span>View Style</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Romantic Floral -->
+          <article class="portfolio-card card-enter" data-category="romantic" data-id="6" data-title="The Tuileries Garden" data-tiers="5 Tiers (220 Servings)" data-flavors="Pistachio Rosewater &amp; Wild Raspberry Compote" data-venue="Château de Chantilly Orangery" data-image="assets/images/cake-tuileries.jpg" data-desc="An ethereal floral spiral of over 140 botanically accurate sugar flowers in blush, champagne, and ivory, hand-veined with organic botanical pigments.">
+            <div class="portfolio-img-box">
+              <img src="assets/images/cake-tuileries.jpg" alt="The Tuileries Garden wedding cake with cascading sugar peonies and roses" loading="lazy" />
+              <button class="portfolio-quick-view" aria-label="Inspect details for The Tuileries Garden">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span>Inspect Details</span>
+              </button>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta-header">
+                <span class="portfolio-tag">Romantic Floral</span>
+                <span class="portfolio-tier-badge">5 Tiers • 220 Servings</span>
+                <span class="portfolio-venue-badge">Chantilly</span>
+              </div>
+              <h3 class="portfolio-title">The Tuileries Garden</h3>
+              <p class="portfolio-meta">Organic Peony Cascade &amp; David Austin Roses</p>
+              <p class="portfolio-desc">
+                An ethereal spiral of over 140 botanically accurate sugar flowers in blush, champagne, and ivory, hand-veined with organic botanical pigments.
+              </p>
+              <div class="portfolio-card-footer">
+                <span class="portfolio-flavor-note" title="Pistachio Rosewater &amp; Wild Raspberry Compote">Pistachio &amp; Rose Raspberry</span>
+                <a href="portfolio.html" class="portfolio-link-btn">
+                  <span>View Style</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 7: Romantic Floral -->
+          <article class="portfolio-card card-enter" data-category="romantic" data-id="7" data-title="Imperial Porcelain" data-tiers="4 Tiers (160 Servings)" data-flavors="White Peach, Jasmine Infusion &amp; Yuzu Cream" data-venue="Hôtel de Crillon Ballroom, Paris" data-image="assets/images/cake-porcelaine.jpg" data-desc="Satin matte porcelain white glaze textured like Limoges china, finished with hand-painted 24K gold damask filigree and hyper-realistic sugar cherry blossoms.">
+            <div class="portfolio-img-box">
+              <img src="assets/images/cake-porcelaine.jpg" alt="Imperial Porcelain 4-tier luxury cake with fine glaze and gold chinoiserie" loading="lazy" />
+              <button class="portfolio-quick-view" aria-label="Inspect details for Imperial Porcelain">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span>Inspect Details</span>
+              </button>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta-header">
+                <span class="portfolio-tag">Romantic Floral</span>
+                <span class="portfolio-tier-badge">4 Tiers • 160 Servings</span>
+                <span class="portfolio-venue-badge">Paris Studio</span>
+              </div>
+              <h3 class="portfolio-title">Imperial Porcelain</h3>
+              <p class="portfolio-meta">Limoges Porcelain Glaze &amp; 24K Chinoiserie</p>
+              <p class="portfolio-desc">
+                Velvety porcelain white glaze adorned with hand-painted 24-karat gold damask filigree and hyper-realistic white sugar cherry blossoms.
+              </p>
+              <div class="portfolio-card-footer">
+                <span class="portfolio-flavor-note" title="White Peach, Jasmine Infusion &amp; Yuzu Cream">Peach &amp; Jasmine Yuzu</span>
+                <a href="portfolio.html" class="portfolio-link-btn">
+                  <span>View Style</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 8: Romantic Floral -->
+          <article class="portfolio-card card-enter" data-category="romantic" data-id="11" data-title="Rose de Grasse Pavilion" data-tiers="4 Tiers (190 Servings)" data-flavors="Grasse Rosewater, Wild Strawberry Compote &amp; Whipped Mascarpone" data-venue="Château de Villette, France" data-image="assets/images/cake-rose-garden.jpg" data-desc="An enchanting garden romance centerpiece draped in fresh-sculpted blush David Austin roses, creamy gardenias, and fragrant rosewater sponge layered with sun-drenched Provence wild strawberries and light mascarpone velvet cream.">
+            <div class="portfolio-img-box">
+              <img src="assets/images/cake-rose-garden.jpg" alt="Rose de Grasse Pavilion luxury romantic wedding cake with David Austin roses" loading="lazy" />
+              <button class="portfolio-quick-view" aria-label="Inspect details for Rose de Grasse Pavilion">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span>Inspect Details</span>
+              </button>
+            </div>
+            <div class="portfolio-details">
+              <div class="portfolio-meta-header">
+                <span class="portfolio-tag">Romantic Floral</span>
+                <span class="portfolio-tier-badge">4 Tiers • 190 Servings</span>
+                <span class="portfolio-venue-badge">Château de Villette</span>
+              </div>
+              <h3 class="portfolio-title">Rose de Grasse Pavilion</h3>
+              <p class="portfolio-meta">David Austin Roses &amp; Grasse Botanicals</p>
+              <p class="portfolio-desc">
+                An enchanting garden romance centerpiece draped in hand-sculpted blush David Austin roses, gardenias, and fragrant Provence wild strawberry layers.
+              </p>
+              <div class="portfolio-card-footer">
+                <span class="portfolio-flavor-note" title="Grasse Rosewater, Wild Strawberry Compote &amp; Whipped Mascarpone">Grasse Rose &amp; Strawberry</span>
+                <a href="portfolio.html" class="portfolio-link-btn">
+                  <span>View Style</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center" style="margin-top: 3.5rem;">
+          <a href="portfolio.html" class="btn btn-secondary btn-lg">View Full 2026 Portfolio &amp; Styles →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Tier & Portion Architecture Calculator -->
+    <section class="section" style="background-color: var(--bg-surface);" aria-label="Interactive Serving Calculator">
+      <div class="container">
+        <div class="text-center max-w-prose" style="margin-bottom: 3rem;">
+          <span class="subheading-editorial" style="justify-content: center;">Interactive Planning Guide</span>
+          <h2>Wedding Cake Tier &amp; Serving Calculator</h2>
+          <div class="ornament-flourish">❧ ✦ ❧</div>
+          <p style="margin-top: 0.5rem;">
+            Plan the architectural dimensions of your centerpiece. Use our interactive slider to calculate the optimal tier diameters, display height, and dessert portions for your celebration.
+          </p>
+        </div>
+
+        <div class="portion-calculator">
+          <div class="portion-slider-group">
+            <label for="guestSlider" class="portion-slider-label">
+              Estimated Wedding Guest Count:
+            </label>
+            <div class="portion-readout-wrap">
+              <span id="guestCountDisplay" class="portion-readout">125</span>
+              <span class="portion-readout-sub">Attending Guests</span>
+            </div>
+            <input type="range" id="guestSlider" class="portion-slider" min="30" max="350" step="5" value="125" aria-label="Guest count slider" />
+            <div class="portion-slider-ticks" aria-hidden="true">
+              <span class="tick-label tick-start">30 (Petite)</span>
+              <span class="tick-label tick-mid">175 (Grand)</span>
+              <span class="tick-label tick-end">350+ (Monumental)</span>
+            </div>
+          </div>
+
+          <div class="portion-recommendation-card">
+            <h4 class="portion-rec-title">Recommended Cake Architecture</h4>
+            <div class="portion-rec-body">
+              <div class="portion-tier-highlight">
+                <span class="portion-rec-label">Structure &amp; Tiers</span>
+                <strong id="recommendedTiers" class="portion-rec-tier-value">3 Tiers Grand (6" + 8" + 10")</strong>
+              </div>
+              <div class="portion-spec-grid">
+                <div class="portion-spec-item">
+                  <span class="portion-spec-label">Display Height</span>
+                  <strong id="recommendedHeight" class="portion-spec-value">~18-20 inches</strong>
+                </div>
+                <div class="portion-spec-item">
+                  <span class="portion-spec-label">Portion Yield</span>
+                  <strong id="recommendedServings" class="portion-spec-value portion-highlight">125 dessert portions</strong>
+                </div>
+              </div>
+            </div>
+            <div class="portion-cta-wrap">
+              <a href="tasting.html" class="btn btn-primary btn-sm portion-cta-btn">
+                <span class="btn-sparkle">✦</span>
+                <span>Reserve Private Tasting Studio</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: Interactive Seasonal Flavor Journey Showcase -->
+    <section class="section" style="background-color: var(--bg-secondary);" aria-label="Seasonal Flavor Tasting Journey">
+      <div class="container">
+        <div class="text-center max-w-prose" style="margin-bottom: 2.5rem;">
+          <span class="subheading-editorial" style="justify-content: center;">Private Tasting Studio</span>
+          <h2>The Four Seasons Flavor Journey</h2>
+          <div class="ornament-flourish">❧ ✦ ❧</div>
+          <p>
+            Experience how our Michelin-trained pastry chefs harmonize rare botanical essences, single-origin chocolate, and hand-foraged fruits across the seasons.
+          </p>
+        </div>
+
+        <!-- Season Selector Pills -->
+        <div class="season-pills-row">
+          <button class="season-pill-btn active" data-season-btn="spring">🌸 Spring • Spring Garden</button>
+          <button class="season-pill-btn" data-season-btn="summer">☀️ Summer • Summer Blossoms</button>
+          <button class="season-pill-btn" data-season-btn="autumn">🍂 Autumn • Golden Harvest</button>
+          <button class="season-pill-btn" data-season-btn="winter">❄️ Winter • Celestial Winter</button>
+        </div>
+
+        <!-- Interactive Flavor Showcase Card -->
+        <div class="flavor-journey-card interactive-3d-tilt" id="seasonalFlavorCard" data-tilt="true">
+          <div class="flavor-journey-media">
+            <img id="flavorSeasonImg" src="assets/images/cake-aurore-blanche.jpg" alt="Spring signature Tahitian vanilla and alpine blackberry wedding cake" loading="lazy" />
+          </div>
+          <div class="flavor-journey-content">
+            <div>
+              <div style="margin-bottom: 0.65rem;">
+                <span class="flavor-season-badge" id="flavorSeasonBadge">Spring Radiance • Spring Garden</span>
+              </div>
+              <span class="subheading-editorial" style="margin-bottom: 0.5rem;">Flavor Architecture</span>
+              <h3 id="flavorSeasonTitle" style="font-size: 1.85rem; margin-bottom: 0.85rem;">Tahitian Vanilla &amp; Wild Alpine Blackberry</h3>
+              <p id="flavorSeasonDesc" style="font-size: 0.98rem; line-height: 1.7;">
+                Double-fold organic Tahitian vanilla bean chiffon soaked in alpine elderflower syrup, filled with wild mountain blackberry compote and whipped champagne mousse.
+              </p>
+
+              <div class="flavor-sensory-bars">
+                <div class="sensory-row">
+                  <span class="sensory-label">Sweetness Balance</span>
+                  <div class="sensory-bar-track"><div class="sensory-bar-fill" id="barSweetness" style="width: 65%;"></div></div>
+                  <span class="sensory-val">65%</span>
+                </div>
+                <div class="sensory-row">
+                  <span class="sensory-label">Botanical Floristry</span>
+                  <div class="sensory-bar-track"><div class="sensory-bar-fill" id="barBotanical" style="width: 92%;"></div></div>
+                  <span class="sensory-val">92%</span>
+                </div>
+                <div class="sensory-row">
+                  <span class="sensory-label">Citrus Brightness</span>
+                  <div class="sensory-bar-track"><div class="sensory-bar-fill" id="barCitrus" style="width: 70%;"></div></div>
+                  <span class="sensory-val">70%</span>
+                </div>
+                <div class="sensory-row">
+                  <span class="sensory-label">Rich Cocoa Depth</span>
+                  <div class="sensory-bar-track"><div class="sensory-bar-fill" id="barCocoa" style="width: 15%;"></div></div>
+                  <span class="sensory-val">15%</span>
+                </div>
+              </div>
+
+              <p style="font-size: 0.875rem; color: var(--accent-gold); font-weight: 600;" id="flavorSeasonPairing">
+                Sommelier: Laurent-Perrier Cuvée Rosé Brut Champagne
+              </p>
+            </div>
+
+            <div style="display: flex; gap: 1rem; margin-top: 1.75rem; flex-wrap: wrap;">
+              <a href="tasting.html" class="btn btn-gold btn-sm">Reserve Tasting Studio</a>
+              <a href="tasting.html#flavor-builder" class="btn btn-secondary btn-sm">Build Tasting Box →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Bespoke Commission Journey Roadmap -->
+    <section class="section" aria-label="Bespoke Commission Roadmap">
+      <div class="container">
+        <div class="text-center max-w-prose" style="margin-bottom: 1rem;">
+          <span class="subheading-editorial" style="justify-content: center;">Bespoke Design Process</span>
+          <h2>The Bespoke Commission Journey</h2>
+          <div class="ornament-flourish">❧ ✦ ❧</div>
+          <p style="margin-top: 0.5rem;">
+            From initial flavor flights in our private studio to on-site white-glove staging on your wedding day, every creation is managed with meticulous culinary precision.
+          </p>
+        </div>
+
+        <div class="journey-roadmap-grid">
+          <!-- Step 1 -->
+          <div class="journey-step-card">
+            <span class="journey-step-num">01</span>
+            <span class="journey-step-badge">Initial Flight</span>
+            <h3 class="journey-step-title">Private Tasting Studio</h3>
+            <p class="journey-step-desc">
+              Sample 8 bespoke cake and mousse combinations alongside sommelier-selected French champagnes in our private tasting suite.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="journey-step-card">
+            <span class="journey-step-num">02</span>
+            <span class="journey-step-badge">Visual Couture</span>
+            <h3 class="journey-step-title">Architectural Sketch</h3>
+            <p class="journey-step-desc">
+              Chef Geneviève Moreau produces hand-drawn watercolor sketches harmonizing with your wedding gown, linens, and floral arrangements.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="journey-step-card">
+            <span class="journey-step-num">03</span>
+            <span class="journey-step-badge">Artisanal Craft</span>
+            <h3 class="journey-step-title">Sugar Botanical Sculpting</h3>
+            <p class="journey-step-desc">
+              Each petal, stamen, and leaf is hand-rolled and tinted from sugar paste, achieving delicate botanical realism and gold foil accents.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="journey-step-card">
+            <span class="journey-step-num">04</span>
+            <span class="journey-step-badge">Climate Transit</span>
+            <h3 class="journey-step-title">Chilled Logistics</h3>
+            <p class="journey-step-desc">
+              Internal food-grade stainless armatures and dual-refrigerated courier transit safeguard structural integrity in any climate.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="journey-step-card">
+            <span class="journey-step-num">05</span>
+            <span class="journey-step-badge">Grand Reveal</span>
+            <h3 class="journey-step-title">Day-Of White-Glove Staging</h3>
+            <p class="journey-step-desc">
+              Our master pastry chefs assemble, level, and place the final sugar floristry on-site at your venue two hours prior to reception.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio Introduction & Philosophy -->
+    <section class="section" style="background-color: var(--bg-secondary);" aria-label="Studio Philosophy">
+      <div class="container">
+        <div class="grid-2" style="align-items: center; gap: 3.5rem;">
+          <div style="position: relative;">
+            <div style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: var(--shadow-luxury);">
+              <img src="assets/images/hero-about.jpg" alt="Master chef meticulously crafting sugar petals in the pastry studio" loading="lazy" />
+            </div>
+          </div>
+          <div>
+            <span class="subheading-editorial">The Studio Philosophy</span>
+            <h2>Where Fine Artistry Meets Sensory Indulgence</h2>
+            <div class="ornament-flourish" style="margin: 1rem 0 1.5rem 0; justify-content: flex-start;">❧ ✦ ❧</div>
+            <p class="dropcap" style="margin-top: 1rem;">
+              We believe a wedding cake should not only serve as the crowning visual sculpture of your reception room, but also deliver an unforgettable culinary revelation that lingers in memory for a lifetime.
+            </p>
+            <p style="margin-top: 1rem;">
+              Founded by Chef Geneviève Moreau following a decadelong career in Michelin-starred Parisian kitchens, Maison Élysée rejects mass shortcuts. We source wild blackberries from alpine valleys, cold-pressed French Normandy butter, organic Tahitian vanilla orchids, and Grand Cru single-origin chocolate from Valrhona.
+            </p>
+            <div style="margin-top: 2rem; display: flex; align-items: center; gap: 2rem;">
+              <div>
+                <span class="font-script" style="font-size: 2.8rem; color: var(--accent-gold);">Geneviève Moreau</span>
+                <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-top: -0.25rem;">Founder &amp; Master Pastry Chef</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Craftsmanship Pillars -->
+        <div class="craft-pillar-grid">
+          <div class="craft-pillar-card">
+            <div class="craft-pillar-icon">🌿</div>
+            <h3 style="font-size: 1.25rem;">Botanical Sugar Floristry</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Every petal, stamen, and leaf is sculpted individually by hand from artisanal sugar paste, reproducing organic English garden blooms with botanical accuracy.
+            </p>
+          </div>
+          <div class="craft-pillar-card">
+            <div class="craft-pillar-icon">🏛️</div>
+            <h3 style="font-size: 1.25rem;">Architectural Cantilevers</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Internal food-grade stainless armatures engineered for zero-gravity cantilever tiers, floating geometry, and monumental 7-tier stability in all climates.
+            </p>
+          </div>
+          <div class="craft-pillar-card">
+            <div class="craft-pillar-icon">🍯</div>
+            <h3 style="font-size: 1.25rem;">Terroir &amp; Michelin Pedigree</h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary);">
+              Zero premixes, artificial oils, or syrups. Only pure Normandy churned butter, single-estate Grand Cru cocoa, and cold-pressed fresh fruit reductions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Featured Services Preview -->
+    <section class="section" style="background-color: var(--bg-secondary);" aria-label="Featured Offerings">
+      <div class="container">
+        <div class="text-center max-w-prose" style="margin-bottom: 3.5rem;">
+          <span class="subheading-editorial" style="justify-content: center;">Bespoke Offerings</span>
+          <h2>Tailored for Grand Celebrations</h2>
+          <div class="ornament-flourish">❧ ✦ ❧</div>
+          <p style="margin-top: 0.5rem;">
+            From majestic multi-tiered centerpieces to decadent French macaron pyramids and personalized guest favors.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/hero-services.jpg" alt="Grand 6-tier architectural luxury wedding cake with 24K gold detailing in a palace ballroom" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-price">From $1,200</span>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem;">Bespoke Wedding Cakes</h3>
+              <p style="font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">
+                Custom 2 to 7-tier architectural cake sculptures engineered with custom structural framing and edible gold detailing.
+              </p>
+              <a href="services.html" class="btn btn-secondary btn-sm">Explore Service Offerings →</a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/cake-dessert-table.jpg" alt="Curated French dessert tables" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-price">From $1,850</span>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem;">Curated Dessert Tables</h3>
+              <p style="font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">
+                Opulent dessert landscapes including hand-painted macarons, seasonal tartlets, crisp cream puffs, and bespoke stands.
+              </p>
+              <a href="services.html" class="btn btn-secondary btn-sm">Explore Dessert Tables →</a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/favors-confections.jpg" alt="Luxury emerald and ivory velvet-tied guest favor gift boxes with French macarons and artisanal confections" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-price">From $18 / Guest</span>
+              <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem;">Guest Favors &amp; Welcome Gifts</h3>
+              <p style="font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">
+                Velvet-tied, monogram-sealed gift boxes containing French macarons, butter shortbread cookies, or artisanal chocolate truffles.
+              </p>
+              <a href="services.html" class="btn btn-secondary btn-sm">Explore Favors &amp; Gifts →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Destination Logistics & White-Glove Staging -->
+    <section class="section" style="background-color: var(--bg-surface);" aria-label="Global Destination Wedding Logistics">
+      <div class="container">
+        <div class="destination-grid">
+          <div>
+            <span class="subheading-editorial">Worldwide Coverage</span>
+            <h2>Destination Weddings Across the Globe</h2>
+            <div class="ornament-flourish" style="justify-content: flex-start; margin: 1rem 0 1.5rem 0;">❧ ✦ ❧</div>
+            <p style="line-height: 1.7; color: var(--text-secondary);">
+              Maison Élysée regularly travels worldwide for international celebrations. Our logistics team coordinates climate-controlled flight cases, customs clearances, and dispatch of our senior pastry chefs for on-site execution.
+            </p>
+            <p style="margin-top: 1rem; line-height: 1.7; color: var(--text-secondary);">
+              Whether your reception is hosted at an Italian lakeside villa, a French chateau, a private Caribbean estate, or a Manhattan penthouse, we guarantee flawless presentation and pristine freshness.
+            </p>
+
+            <div class="destination-pills-wrap">
+              <span class="destination-pill">📍 Lake Como &amp; Tuscany</span>
+              <span class="destination-pill">📍 French Riviera &amp; Paris</span>
+              <span class="destination-pill">📍 Amalfi Coast &amp; Capri</span>
+              <span class="destination-pill">📍 The Cotswolds &amp; London</span>
+              <span class="destination-pill">📍 Manhattan &amp; The Hamptons</span>
+              <span class="destination-pill">📍 Dubai &amp; Arabian Gulf</span>
+              <span class="destination-pill">📍 St. Barth &amp; Caribbean</span>
+            </div>
+
+            <div style="margin-top: 2.25rem;">
+              <a href="contact.html" class="btn btn-primary btn-sm">Inquire for Destination Logistics →</a>
+            </div>
+          </div>
+
+          <div>
+            <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-luxury); border: 1px solid var(--border-color); margin-bottom: 1.25rem;">
+              <img src="assets/images/cake-tuileries.jpg" alt="White-glove destination wedding cake delivery and on-site floral assembly in an estate orangery" loading="lazy" style="width: 100%; max-height: 480px; object-fit: cover;" />
+            </div>
+            <div class="destination-guarantee-card" style="display: flex; align-items: center; gap: 1rem; padding: 1rem 1.25rem; background: var(--bg-surface-elevated); border: 1px solid var(--border-color); border-radius: var(--radius-md); box-shadow: var(--shadow-subtle);">
+              <div style="font-size: 1.75rem; line-height: 1;">✈️</div>
+              <div>
+                <div style="font-family: var(--font-serif-cinzel); font-size: 0.95rem; font-weight: 700; color: var(--accent-gold);">Chilled Transit Guarantee</div>
+                <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.2rem;">Patented Thermal Armature • White-Glove On-Site Setup</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="section" style="background-color: var(--bg-secondary);" aria-label="Client Testimonials">
+      <div class="container">
+        <div class="text-center max-w-prose" style="margin-bottom: 3.5rem;">
+          <span class="subheading-editorial" style="justify-content: center;">Kind Words</span>
+          <h2>Cherished by Our Couples</h2>
+          <div class="ornament-flourish">❧ ✦ ❧</div>
+        </div>
+
+        <div class="grid-3">
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “Geneviève and her team crafted a 5-tier masterpiece for our wedding at Lake Como that left our 200 guests completely speechless. The pistachio rosewater flavor was intoxicatingly delicious.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="assets/images/testimonial-1.jpg" alt="Portrait of Elena Vance" class="testimonial-avatar" />
+              <div>
+                <div class="author-name">Elena &amp; Marcus Vance</div>
+                <div class="author-venue">Villa Balbiano, Lake Como</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “Our dessert table looked like a high-fashion editorial spread from Vogue Weddings. The macaron tower and pastries disappeared in twenty minutes. Absolute perfection from first tasting to day-of setup.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="assets/images/testimonial-2.jpg" alt="Portrait of Julian St. Claire" class="testimonial-avatar" />
+              <div>
+                <div class="author-name">Julian &amp; Claire St. Laurent</div>
+                <div class="author-venue">The Glasshouse, Manhattan</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div>
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “The tasting experience in their private studio was our single favorite wedding planning memory. The attention to dietary needs without sacrificing an ounce of luxury was breathtaking.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <img src="assets/images/testimonial-3.jpg" alt="Portrait of Sophia Al-Mansoor" class="testimonial-avatar" />
+              <div>
+                <div class="author-name">Sophia &amp; Tariq Al-Mansoor</div>
+                <div class="author-venue">Château de Villette, France</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="44" height="44" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.6rem;">Maison Élysée</span>
+              <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; max-width: 340px; margin-bottom: 1.5rem;">
+            Bespoke wedding cakes, organic sugar botanical sculptures, and dessert tables for luxury celebrations worldwide.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            740 Grand Avenue, Suite 400<br />
+            By appointment only for couples &amp; planners.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio &amp; Gallery</a></li>
+            <li><a href="about.html" class="footer-link">The Studio Story</a></li>
+            <li><a href="services.html" class="footer-link">Bespoke Offerings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Experiences</h4>
+          <ul class="footer-nav">
+            <li><a href="tasting.html" class="footer-link">Tasting Appointments</a></li>
+            <li><a href="tasting.html#flavor-builder" class="footer-link">Tasting Box Builder</a></li>
+            <li><a href="blog.html" class="footer-link">Studio Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Coverage</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">The Studio Journal</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+            Subscribe to receive our annual bridal dessert trend forecast and seasonal tasting release dates.
+          </p>
+          <form class="newsletter-form" style="display: flex; gap: 0.5rem;" aria-label="Newsletter subscription form">
+            <input type="email" placeholder="Your email address" required class="form-input" style="padding: 0.6rem 0.85rem; font-size: 0.85rem;" aria-label="Email address" />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Maison Élysée Luxury Cake Studio. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Commission</a>
+          <a href="#" class="footer-link">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Accessible Home Lightbox Modal -->
+  <div class="lightbox-backdrop" id="homeLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Cake design details modal">
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="homeLightboxClose" aria-label="Close modal">&times;</button>
+      
+      <div class="lightbox-img-pane">
+        <img src="" alt="" id="homeLightboxImg" class="lightbox-img" />
+      </div>
+
+      <div class="lightbox-info-pane">
+        <div>
+          <span class="lightbox-category" id="homeLightboxCategory" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; color: var(--accent-gold); display: block; margin-bottom: 0.5rem;"></span>
+          <h2 class="lightbox-title" id="homeLightboxTitle" style="font-size: 2rem; margin-bottom: 0.75rem;"></h2>
+          <p class="lightbox-desc" id="homeLightboxDesc" style="font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.5rem; color: var(--text-secondary);"></p>
+          
+          <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <div style="display: flex; justify-content: space-between;">
+              <span style="color: var(--text-muted);">Architecture &amp; Scale:</span>
+              <strong id="homeLightboxTiers" style="color: var(--text-primary);"></strong>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span style="color: var(--text-muted);">Signature Flavors:</span>
+              <strong id="homeLightboxFlavors" style="color: var(--text-primary); text-align: right;"></strong>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span style="color: var(--text-muted);">Wedding Setting:</span>
+              <strong id="homeLightboxVenue" style="color: var(--accent-gold); text-align: right;"></strong>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--border-hairline); padding-top: 1.5rem;">
+          <a href="portfolio.html" class="btn btn-secondary btn-sm">Explore All Creations</a>
+          <a href="contact.html" class="btn btn-primary btn-sm" id="homeLightboxInquireBtn">Inquire for This Style</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

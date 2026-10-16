@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maison Élysée Services — Bespoke wedding cakes, curated French dessert tables, artisanal favors, private tasting studios, and white-glove on-site delivery." />
+  <title>Services &amp; Offerings | Maison Élysée Luxury Wedding Cakes</title>
+
+  <link rel="icon" href="assets/images/logo-elysee.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+  <!-- Anti-Flash Preload Script -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('maison_elysee_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        var savedDir = localStorage.getItem('maison_elysee_dir') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        localStorage.removeItem('maison_elysee_lang');
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-font-style="haute-editorial">
+  <!-- Ambient Luxury Cursor Spotlight (Award-Winning Agency Experience) -->
+  <div class="luxury-cursor-aura" id="luxuryCursorAura" aria-hidden="true"></div>
+
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Site Preloader / Loading Area -->
+  <div id="sitePreloader" class="site-preloader" aria-hidden="true" role="status" aria-label="Loading Maison Élysée">
+    <div class="preloader-inner">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Emblem" class="preloader-logo-img" width="88" height="88" />
+        <div class="preloader-aura"></div>
+      </div>
+      <div class="preloader-brand">
+        <span class="preloader-title">Maison Élysée</span>
+        <span class="preloader-sub">Luxury Cake Studio • Paris</span>
+      </div>
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Maison Élysée Homepage">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="38" height="38" />
+        <div class="brand-text-wrap">
+          <span class="brand-title">Maison Élysée</span>
+          <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+        <a href="portfolio.html" class="nav-link" data-i18n="navPortfolio">Portfolio</a>
+        <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
+        <a href="services.html" class="nav-link active" data-i18n="navServices">Services</a>
+        <a href="tasting.html" class="nav-link" data-i18n="navTasting">Tasting Studio</a>
+        <a href="blog.html" class="nav-link" data-i18n="navBlog">Journal</a>
+        <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- In-Navbar Theme & Direction Controls -->
+        <div class="nav-controls">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode" title="Switch Theme">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL" title="Switch between LTR and RTL layout">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+
+        <a href="tasting.html" class="btn btn-primary btn-sm nav-cta-btn"><span class="btn-sparkle">✦</span> <span data-i18n="btnBookTasting">Reserve Tasting</span></a>
+        <button class="menu-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-panel">
+      <div>
+        <div class="drawer-header">
+          <a href="index.html" class="brand-logo drawer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="32" height="32" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.35rem;">Maison Élysée</span>
+              <span class="brand-subtitle" style="font-size: 0.6rem;">Luxury Cakes</span>
+            </div>
+          </a>
+          <button class="drawer-close" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="drawer-nav">
+          <li><a href="index.html" class="drawer-nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="drawer-nav-link">Portfolio &amp; Gallery</a></li>
+          <li><a href="about.html" class="drawer-nav-link">About Studio &amp; Story</a></li>
+          <li><a href="services.html" class="drawer-nav-link active">Services &amp; Offerings</a></li>
+          <li><a href="tasting.html" class="drawer-nav-link">Tasting Appointments</a></li>
+          <li><a href="blog.html" class="drawer-nav-link">The Studio Journal</a></li>
+          <li><a href="contact.html" class="drawer-nav-link">Contact &amp; Coverage</a></li>
+        </ul>
+
+        <div class="drawer-controls" style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-hairline); display: flex; flex-wrap: wrap; gap: 0.65rem;">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+      </div>
+      <div style="padding-top: 2rem; border-top: 1px solid var(--border-hairline);">
+        <a href="tasting.html" class="btn btn-gold btn-lg" style="width: 100%;">Book Tasting Experience</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Luxury Page Hero Section -->
+    <section class="page-hero" aria-label="Services Header">
+      <!-- Atmospheric Ambient Lighting Aurora -->
+      <div class="hero-ambient-aurora" aria-hidden="true"></div>
+      <!-- Floating Gold Dust Particles -->
+      <div class="hero-dust-container" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="page-hero-grid">
+          <div class="page-hero-content">
+            <span class="subheading-editorial">Bespoke Confectionery Suite</span>
+            <h1 class="page-hero-headline"><span class="gradient-emerald-gold">Signature Offerings</span> for Luxury Weddings</h1>
+            <p class="page-hero-lead">
+              From grand multi-tiered wedding cakes to lavish French dessert tables, artisanal guest favors, and private champagne tastings, explore our curated suite of culinary services.
+            </p>
+
+            <div class="hero-cta-group" style="margin-bottom: 1.5rem;">
+              <a href="tasting.html" class="btn btn-primary btn-lg magnetic-btn"><span class="btn-sparkle">✦</span> Reserve Private Tasting</a>
+              <a href="contact.html" class="btn btn-secondary btn-lg magnetic-btn">Inquire for Commission</a>
+            </div>
+
+            <!-- Hero Feature Pills -->
+            <div class="page-hero-pills">
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> Custom Architectural Design
+              </span>
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> Premier Cru Champagne Suite
+              </span>
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> White-Glove Refrigerated Transit
+              </span>
+            </div>
+          </div>
+
+          <div class="page-hero-image-wrapper">
+            <div class="page-hero-image-frame">
+              <img src="assets/images/hero-services.jpg" alt="Luxury bespoke wedding cake services display with grand cake and confections" />
+            </div>
+            <!-- Floating Accolade -->
+            <div class="floating-badge">
+              <div class="floating-badge-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <div>
+                <div class="floating-badge-title">Full-Service Studio</div>
+                <div class="floating-badge-sub">Bespoke Architecture &amp; Styling</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid (Detailed 5 Offerings) -->
+    <section class="section" aria-label="Services List">
+      <div class="container">
+        <div class="grid-3 services-offerings-grid">
+          
+          <!-- Offering 1: Wedding Cakes -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/cake-aurore-blanche.jpg" alt="Grand tiered wedding cake" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-price">Starting from $1,200</span>
+              <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Bespoke Wedding Cakes</h2>
+              <p style="font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">
+                Architectural 2 to 7-tier centerpieces with custom internal structural armatures. Includes hand-sculpted sugar floristry, Bas-relief piping, or 24K edible gold leaf accents tailored to your floral aesthetics.
+              </p>
+              <div style="border-top: 1px solid var(--border-hairline); padding-top: 1rem; margin-bottom: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+                ✦ 50 to 350+ guests &nbsp;|&nbsp; ✦ Watercolor rendering included
+              </div>
+              <a href="contact.html" class="btn btn-secondary btn-sm">Inquire About Cakes →</a>
+            </div>
+          </article>
+
+          <!-- Offering 2: Dessert Tables -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/cake-dessert-table.jpg" alt="Curated French dessert tables" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-price">Starting from $1,850</span>
+              <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Curated Dessert Tables</h2>
+              <p style="font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">
+                Lavish dessert installations comprising 4 to 8 sweet varieties: 8-tier macaron pyramids, crisp cream puffs, seasonal fruit tartlets, mini pavlovas, and caramelized pastries, complete with luxury display pedestals.
+              </p>
+              <div style="border-top: 1px solid var(--border-hairline); padding-top: 1rem; margin-bottom: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+                ✦ Custom pedestal styling &nbsp;|&nbsp; ✦ Menu calligraphies included
+              </div>
+              <a href="contact.html" class="btn btn-secondary btn-sm">Inquire About Dessert Tables →</a>
+            </div>
+          </article>
+
+          <!-- Offering 3: Favors -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/favors-confections.jpg" alt="Artisanal guest favors and welcome confectionery" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-price">Starting from $18 / Guest</span>
+              <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Favors &amp; Welcome Gifts</h2>
+              <p style="font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">
+                Individual couture boxes enclosed with custom silk velvet ribbons and hot-pressed wax seals. Choose from dual macaron sets, hand-painted chocolate truffles, or glazed butter shortbread cookies.
+              </p>
+              <div style="border-top: 1px solid var(--border-hairline); padding-top: 1rem; margin-bottom: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+                ✦ Monogrammed packaging &nbsp;|&nbsp; ✦ Hotel drop-off available
+              </div>
+              <a href="contact.html" class="btn btn-secondary btn-sm">Inquire About Favors →</a>
+            </div>
+          </article>
+
+          <!-- Offering 4: Tasting Studio -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/hero-tasting.jpg" alt="Private champagne tasting experience" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-price">$120 for Two (Credited toward commission)</span>
+              <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Private Tasting Studios</h2>
+              <p style="font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">
+                A 75-minute sensory design session in our private studio. Savor six curated sponge and filling pairings accompanied by chilled Premier Cru Champagne, followed by an architectural design consultation.
+              </p>
+              <div style="border-top: 1px solid var(--border-hairline); padding-top: 1rem; margin-bottom: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+                ✦ 6 flavor pairings &nbsp;|&nbsp; ✦ Tasting fee credited to booking
+              </div>
+              <a href="tasting.html" class="btn btn-secondary btn-sm">Book Tasting Studio →</a>
+            </div>
+          </article>
+
+          <!-- Offering 5: White Glove Delivery -->
+          <article class="service-card service-card-wide">
+            <div class="service-card-media">
+              <img src="assets/images/delivery-setup.jpg" alt="White-glove wedding cake delivery, architectural sugar floristry and on-site venue styling" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-price">From $175 (Local Metro) / Distance Quoted</span>
+              <h2 style="font-size: 1.5rem; margin-bottom: 0.75rem;">White-Glove Delivery, Logistics &amp; On-Site Styling</h2>
+              <p style="font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1;">
+                Every wedding cake is transported in our dedicated refrigerated suspension vehicles. Our master decorator personally oversees delivery 2 to 3 hours prior to guest arrival, installs structural dowels on-site, arranges fresh or sugar florals with your florist, and coordinates with venue banquet staff.
+              </p>
+              <div style="border-top: 1px solid var(--border-hairline); padding-top: 1rem; margin-bottom: 1.25rem; font-size: 0.85rem; color: var(--text-muted);">
+                ✦ Serving wine country, coastal estates, and destination events worldwide.
+              </div>
+              <a href="contact.html" class="btn btn-secondary btn-sm">Inquire About Logistics →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Tier & Portion Calculator -->
+    <section class="section" style="background-color: var(--bg-secondary);" aria-label="Interactive Serving Calculator">
+      <div class="container">
+        <div class="text-center max-w-prose" style="margin-bottom: 3rem;">
+          <span class="subheading-editorial" style="justify-content: center;">Interactive Planning Guide</span>
+          <h2>Wedding Cake Tier &amp; Serving Calculator</h2>
+          <p style="margin-top: 1rem;">
+            Use our interactive slider to calculate the optimal tier architecture and structural dimensions for your guest count.
+          </p>
+        </div>
+
+        <div class="portion-calculator">
+          <div class="portion-slider-group">
+            <label for="guestSlider" class="portion-slider-label">
+              Estimated Wedding Guest Count:
+            </label>
+            <div class="portion-readout-wrap">
+              <span id="guestCountDisplay" class="portion-readout">125</span>
+              <span class="portion-readout-sub">Attending Guests</span>
+            </div>
+            <input type="range" id="guestSlider" class="portion-slider" min="30" max="350" step="5" value="125" aria-label="Guest count slider" />
+            <div class="portion-slider-ticks" aria-hidden="true">
+              <span class="tick-label tick-start">30 (Petite)</span>
+              <span class="tick-label tick-mid">175 (Grand)</span>
+              <span class="tick-label tick-end">350+ (Monumental)</span>
+            </div>
+          </div>
+
+          <div class="portion-recommendation-card">
+            <h4 class="portion-rec-title">Recommended Cake Architecture</h4>
+            <div class="portion-rec-body">
+              <div class="portion-tier-highlight">
+                <span class="portion-rec-label">Structure &amp; Tiers</span>
+                <strong id="recommendedTiers" class="portion-rec-tier-value">3 Tiers Grand (6" + 8" + 10")</strong>
+              </div>
+              <div class="portion-spec-grid">
+                <div class="portion-spec-item">
+                  <span class="portion-spec-label">Display Height</span>
+                  <strong id="recommendedHeight" class="portion-spec-value">~18-20 inches</strong>
+                </div>
+                <div class="portion-spec-item">
+                  <span class="portion-spec-label">Portion Yield</span>
+                  <strong id="recommendedServings" class="portion-spec-value portion-highlight">125 dessert portions</strong>
+                </div>
+              </div>
+            </div>
+            <div class="portion-cta-wrap">
+              <a href="tasting.html" class="btn btn-primary btn-sm portion-cta-btn">
+                <span class="btn-sparkle">✦</span>
+                <span>Plan This Cake at a Tasting Studio</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="44" height="44" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.6rem;">Maison Élysée</span>
+              <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; max-width: 340px; margin-bottom: 1.5rem;">
+            Bespoke wedding cakes, organic sugar botanical sculptures, and dessert tables for luxury celebrations worldwide.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio &amp; Gallery</a></li>
+            <li><a href="about.html" class="footer-link">The Studio Story</a></li>
+            <li><a href="services.html" class="footer-link">Bespoke Offerings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Experiences</h4>
+          <ul class="footer-nav">
+            <li><a href="tasting.html" class="footer-link">Tasting Appointments</a></li>
+            <li><a href="tasting.html#flavor-builder" class="footer-link">Tasting Box Builder</a></li>
+            <li><a href="blog.html" class="footer-link">Studio Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Coverage</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">The Studio Journal</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+            Subscribe to receive our annual bridal dessert trend forecast and seasonal tasting release dates.
+          </p>
+          <form class="newsletter-form" style="display: flex; gap: 0.5rem;" aria-label="Newsletter subscription form">
+            <input type="email" placeholder="Your email address" required class="form-input" style="padding: 0.6rem 0.85rem; font-size: 0.85rem;" aria-label="Email address" />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Maison Élysée Luxury Cake Studio. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Commission</a>
+          <a href="#" class="footer-link">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

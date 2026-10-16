@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none" class="elysee-crest-svg" aria-label="Maison Élysée Royal Crest">
+  <defs>
+    <!-- 24K Liquid Gold Metallic Gradient with Deep Contrast -->
+    <linearGradient id="elyseeGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE5A4" />
+      <stop offset="22%" stop-color="#DEB059" />
+      <stop offset="50%" stop-color="#B8860B" />
+      <stop offset="78%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#7C5214" />
+    </linearGradient>
+
+    <!-- Deep Emerald Glow for Jewels -->
+    <radialGradient id="elyseeEmeraldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.95" />
+      <stop offset="55%" stop-color="#047857" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#064E3B" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient Central Jewel Aura -->
+  <circle cx="50" cy="50" r="28" fill="url(#elyseeEmeraldGlow)" opacity="0.45" />
+
+  <!-- Outer Filigree Medallion -->
+  <rect x="5.5" y="5.5" width="89" height="89" rx="24" stroke="url(#elyseeGoldGrad)" stroke-width="1.8" />
+  <rect x="9.5" y="9.5" width="81" height="81" rx="20" stroke="url(#elyseeGoldGrad)" stroke-width="0.95" stroke-dasharray="2.5 3" opacity="0.85" />
+
+  <!-- Cardinal Jewels -->
+  <circle cx="50" cy="5.5" r="2.2" fill="url(#elyseeGoldGrad)" />
+  <circle cx="50" cy="94.5" r="2.2" fill="url(#elyseeGoldGrad)" />
+  <circle cx="5.5" cy="50" r="2.2" fill="url(#elyseeGoldGrad)" />
+  <circle cx="94.5" cy="50" r="2.2" fill="url(#elyseeGoldGrad)" />
+
+  <!-- Corner Fleurons -->
+  <circle cx="16" cy="16" r="1.4" fill="url(#elyseeGoldGrad)" opacity="0.75" />
+  <circle cx="84" cy="16" r="1.4" fill="url(#elyseeGoldGrad)" opacity="0.75" />
+  <circle cx="16" cy="84" r="1.4" fill="url(#elyseeGoldGrad)" opacity="0.75" />
+  <circle cx="84" cy="84" r="1.4" fill="url(#elyseeGoldGrad)" opacity="0.75" />
+
+  <!-- Royal Coronet & 8-Pointed Star Peak -->
+  <g id="crown" fill="url(#elyseeGoldGrad)">
+    <!-- 8-Pointed Star of Excellence -->
+    <path d="M50 12.5 L51.2 16.5 L55 17.5 L51.2 18.5 L50 22.5 L48.8 18.5 L45 17.5 L48.8 16.5 Z" />
+    <!-- Coronet Arch & Pearls -->
+    <path d="M38 25 C43 22 47 22.5 50 24 C53 22.5 57 22 62 25 C58 27.5 42 27.5 38 25 Z" opacity="0.9" />
+    <circle cx="43" cy="22" r="1" />
+    <circle cx="50" cy="23.5" r="1.1" />
+    <circle cx="57" cy="22" r="1" />
+  </g>
+
+  <!-- Central Intertwined Monogram: Classical French M & É -->
+  <!-- Bold Roman Architectural M -->
+  <g id="monogram-M" fill="url(#elyseeGoldGrad)">
+    <!-- Left Column + Serifs -->
+    <path d="M26 34 H35 V37 H33 V64 H35 V67 H26 V64 H28 V37 H26 Z" />
+    <!-- Left Diagonal -->
+    <path d="M32 34 L49 63 H51 L36 34 Z" />
+    <!-- Right Diagonal -->
+    <path d="M68 34 L51 63 H49 L64 34 Z" />
+    <!-- Right Column + Serifs -->
+    <path d="M65 34 H74 V37 H72 V64 H74 V67 H65 V64 H67 V37 H65 Z" />
+  </g>
+
+  <!-- Flowing Script Letter É (Interlaced Across Center of M) -->
+  <g id="monogram-E" stroke="url(#elyseeGoldGrad)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Accent Aigu over E -->
+    <path d="M54 29 L59 25.5" stroke-width="2.5" />
+    <!-- Elegant Upper Loop -->
+    <path d="M42 48 C43 43 56 42 59 47 C60 52 47 52 45 54 C42 58 45 64 54 64 C58 64 61 62 63 59" stroke-width="2.5" />
+  </g>
+
+  <!-- Classical Cake Pedestal / Flourish Base -->
+  <g id="base" stroke="url(#elyseeGoldGrad)" stroke-width="1.4" stroke-linecap="round" fill="none">
+    <path d="M32 72 H68" />
+    <path d="M38 75.5 H62" stroke-width="1.1" />
+    <!-- Botanical Laurel Garland Sprigs -->
+    <path d="M27 68 Q21 76 29 82 Q38 86 50 86 Q62 86 71 82 Q79 76 73 68" stroke-width="1.2" stroke-dasharray="1 3" />
+    <circle cx="50" cy="86" r="2.0" fill="url(#elyseeGoldGrad)" />
+  </g>
+</svg>

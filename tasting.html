@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maison Élysée Tasting Studio — Experience a private sensory cake tasting, explore interactive flavor pairings, and request an appointment." />
+  <title>Tasting Appointments &amp; Flavor Box Builder | Maison Élysée</title>
+
+  <link rel="icon" href="assets/images/logo-elysee.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+  <!-- Anti-Flash Preload Script -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('maison_elysee_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        var savedDir = localStorage.getItem('maison_elysee_dir') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        localStorage.removeItem('maison_elysee_lang');
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-font-style="haute-editorial">
+  <!-- Ambient Luxury Cursor Spotlight (Award-Winning Agency Experience) -->
+  <div class="luxury-cursor-aura" id="luxuryCursorAura" aria-hidden="true"></div>
+
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Site Preloader / Loading Area -->
+  <div id="sitePreloader" class="site-preloader" aria-hidden="true" role="status" aria-label="Loading Maison Élysée">
+    <div class="preloader-inner">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Emblem" class="preloader-logo-img" width="88" height="88" />
+        <div class="preloader-aura"></div>
+      </div>
+      <div class="preloader-brand">
+        <span class="preloader-title">Maison Élysée</span>
+        <span class="preloader-sub">Luxury Cake Studio • Paris</span>
+      </div>
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Maison Élysée Homepage">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="38" height="38" />
+        <div class="brand-text-wrap">
+          <span class="brand-title">Maison Élysée</span>
+          <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+        <a href="portfolio.html" class="nav-link" data-i18n="navPortfolio">Portfolio</a>
+        <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
+        <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
+        <a href="tasting.html" class="nav-link active" data-i18n="navTasting">Tasting Studio</a>
+        <a href="blog.html" class="nav-link" data-i18n="navBlog">Journal</a>
+        <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- In-Navbar Theme & Direction Controls -->
+        <div class="nav-controls">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode" title="Switch Theme">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL" title="Switch between LTR and RTL layout">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+
+        <a href="#booking-section" class="btn btn-primary btn-sm nav-cta-btn"><span class="btn-sparkle">✦</span> <span data-i18n="btnBookTasting">Reserve Tasting</span></a>
+        <button class="menu-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-panel">
+      <div>
+        <div class="drawer-header">
+          <a href="index.html" class="brand-logo drawer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="32" height="32" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.35rem;">Maison Élysée</span>
+              <span class="brand-subtitle" style="font-size: 0.6rem;">Luxury Cakes</span>
+            </div>
+          </a>
+          <button class="drawer-close" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="drawer-nav">
+          <li><a href="index.html" class="drawer-nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="drawer-nav-link">Portfolio &amp; Gallery</a></li>
+          <li><a href="about.html" class="drawer-nav-link">About Studio &amp; Story</a></li>
+          <li><a href="services.html" class="drawer-nav-link">Services &amp; Offerings</a></li>
+          <li><a href="tasting.html" class="drawer-nav-link active">Tasting Appointments</a></li>
+          <li><a href="blog.html" class="drawer-nav-link">The Studio Journal</a></li>
+          <li><a href="contact.html" class="drawer-nav-link">Contact &amp; Coverage</a></li>
+        </ul>
+
+        <div class="drawer-controls" style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-hairline); display: flex; flex-wrap: wrap; gap: 0.65rem;">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+      </div>
+      <div style="padding-top: 2rem; border-top: 1px solid var(--border-hairline);">
+        <a href="#booking-section" class="btn btn-gold btn-lg" style="width: 100%;">Book Tasting Experience</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Hero / What to Expect Section -->
+    <section class="page-hero" aria-label="Tasting Studio Introduction">
+      <!-- Atmospheric Ambient Lighting Aurora -->
+      <div class="hero-ambient-aurora" aria-hidden="true"></div>
+      <!-- Floating Gold Dust Particles -->
+      <div class="hero-dust-container" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="page-hero-grid">
+          <div class="page-hero-content">
+            <span class="subheading-editorial">Private Sensory Studio</span>
+            <h1 class="page-hero-headline">What to Expect at Your <span class="gradient-emerald-gold">Tasting Experience</span></h1>
+            <p class="page-hero-lead">
+              Your tasting session is one of the most delightful milestones of your wedding planning journey. We invite you into our private studio for a 75-minute immersion in fine pastry design and champagne pairings.
+            </p>
+
+            <div class="tasting-steps-list" style="display: flex; flex-direction: column; gap: 1.15rem; width: 100%; margin-bottom: 1.5rem;">
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-tertiary); display: flex; align-items: center; justify-content: center; color: var(--accent-gold); font-weight: 700; flex-shrink: 0;">1</div>
+                <div>
+                  <strong>Six Curated Flavor Pairings:</strong>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.2rem;">Savor fresh mini cake cubes with layered buttercreams, fruit preserves, and crisp praline crunch.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-tertiary); display: flex; align-items: center; justify-content: center; color: var(--accent-gold); font-weight: 700; flex-shrink: 0;">2</div>
+                <div>
+                  <strong>Sommelier Champagne Service:</strong>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.2rem;">Accompanied by chilled Premier Cru Brut Champagne or artisanal sparkling jasmine tea.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-tertiary); display: flex; align-items: center; justify-content: center; color: var(--accent-gold); font-weight: 700; flex-shrink: 0;">3</div>
+                <div>
+                  <strong>Design Sketch &amp; Palette Consultation:</strong>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.2rem;">Bring your floral swatches, invitation stationery, and moodboard for live architectural review.</p>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--bg-tertiary); display: flex; align-items: center; justify-content: center; color: var(--accent-gold); font-weight: 700; flex-shrink: 0;">4</div>
+                <div>
+                  <strong>Credited Tasting Fee:</strong>
+                  <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.2rem;">The $120 tasting experience fee for two guests is 100% credited toward your commissioned cake.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature Pills -->
+            <div class="page-hero-pills">
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> 75-Minute Sensory Session
+              </span>
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> $120 Credited to Booking
+              </span>
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> Live Sketch Review
+              </span>
+            </div>
+          </div>
+
+          <div class="page-hero-image-wrapper">
+            <div class="page-hero-image-frame">
+              <img src="assets/images/hero-tasting.jpg" alt="Private champagne and artisanal cake tasting experience" />
+            </div>
+            <!-- Floating Accolade -->
+            <div class="floating-badge">
+              <div class="floating-badge-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <div>
+                <div class="floating-badge-title">Private Tasting Studio</div>
+                <div class="floating-badge-sub">Premier Cru Champagne Service</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Feature: Tasting Box Customizer -->
+    <section class="section" id="flavor-builder" style="background-color: var(--bg-secondary);" aria-label="Interactive Flavor Customizer">
+      <div class="container">
+        <div class="text-center max-w-prose" style="margin-bottom: 3rem;">
+          <span class="subheading-editorial" style="justify-content: center;">Sensory Exploration</span>
+          <h2>Interactive Tasting Box Customizer</h2>
+          <p style="margin-top: 1rem;">
+            Mix and match your dream flavor combinations below. Your personalized tasting curation will automatically update the appointment form below!
+          </p>
+        </div>
+
+        <div class="customizer-box">
+          <div class="grid-2" style="align-items: flex-start; gap: 3rem;">
+            
+            <!-- Selection Steps -->
+            <div>
+              <!-- Step 1: Sponge -->
+              <h3 class="customizer-step-title">
+                <span>1.</span> Select Artisanal Sponge
+              </h3>
+              <div class="option-grid">
+                <button type="button" class="option-pill active" data-customizer-step="sponge">
+                  <span class="option-name">Tahitian Vanilla Bean</span>
+                  <span class="option-desc">Double-fold Tahitian vanilla infused with organic bourbon cream.</span>
+                </button>
+                <button type="button" class="option-pill" data-customizer-step="sponge">
+                  <span class="option-name">Valrhona Dark Cocoa</span>
+                  <span class="option-desc">70% Guanaja chocolate crumb with espresso reduction notes.</span>
+                </button>
+                <button type="button" class="option-pill" data-customizer-step="sponge">
+                  <span class="option-name">Sicilian Olive Oil &amp; Lemon</span>
+                  <span class="option-desc">Cold-pressed citrus olive oil cake with subtle thyme blossoms.</span>
+                </button>
+                <button type="button" class="option-pill" data-customizer-step="sponge">
+                  <span class="option-name">Earl Grey &amp; Lavender</span>
+                  <span class="option-desc">Bergamot black tea steeped cake with French culinary lavender.</span>
+                </button>
+              </div>
+
+              <!-- Step 2: Filling -->
+              <h3 class="customizer-step-title">
+                <span>2.</span> Select Fruit Preserves &amp; Ganache Filling
+              </h3>
+              <div class="option-grid">
+                <button type="button" class="option-pill active" data-customizer-step="filling">
+                  <span class="option-name">Blackberry Champagne Confit</span>
+                  <span class="option-desc">Wild alpine blackberries simmered with Premier Cru Brut Champagne.</span>
+                </button>
+                <button type="button" class="option-pill" data-customizer-step="filling">
+                  <span class="option-name">Salted Caramel Buttercream</span>
+                  <span class="option-desc">Slow-caramelized Brittany sea salt with whipped Normandy butter.</span>
+                </button>
+                <button type="button" class="option-pill" data-customizer-step="filling">
+                  <span class="option-name">Pistachio Praline Crunch</span>
+                  <span class="option-desc">Bronte pistachio paste with toasted feuilletine wafer crisps.</span>
+                </button>
+                <button type="button" class="option-pill" data-customizer-step="filling">
+                  <span class="option-name">Passionfruit Curd</span>
+                  <span class="option-desc">Bright tropical tang balanced with silky white chocolate mousse.</span>
+                </button>
+              </div>
+
+              <!-- Step 3: Exterior Finish -->
+              <h3 class="customizer-step-title">
+                <span>3.</span> Select Luxury Exterior Finish
+              </h3>
+              <div class="option-grid">
+                <button type="button" class="option-pill active" data-customizer-step="finish">
+                  <span class="option-name">Stucco White Chocolate</span>
+                  <span class="option-desc">Hand-troweled textured matte white chocolate stone finish.</span>
+                </button>
+                <button type="button" class="option-pill" data-customizer-step="finish">
+                  <span class="option-name">Satin Ivory Fondant</span>
+                  <span class="option-desc">Ultra-thin porcelain fondant with razor-sharp 90-degree edges.</span>
+                </button>
+                <button type="button" class="option-pill" data-customizer-step="finish">
+                  <span class="option-name">24K Distressed Gold Leaf</span>
+                  <span class="option-desc">Organic torn flakes of edible Florentine gold foil.</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Summary Receipt Card -->
+            <div class="customizer-summary-card">
+              <span class="subheading-editorial">Curated Selection</span>
+              <h3 class="summary-heading">Your Custom Tasting Profile</h3>
+              
+              <div class="summary-row">
+                <span class="label">Artisanal Sponge:</span>
+                <span class="val" id="summarySponge">Tahitian Vanilla Bean</span>
+              </div>
+              <div class="summary-row">
+                <span class="label">Layered Filling:</span>
+                <span class="val" id="summaryFilling">Blackberry Champagne Confit</span>
+              </div>
+              <div class="summary-row">
+                <span class="label">Exterior Styling:</span>
+                <span class="val" id="summaryFinish">Stucco White Chocolate</span>
+              </div>
+
+              <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-light); margin-top: 0.5rem;">
+                <span style="font-size: 0.75rem; text-transform: uppercase; color: var(--accent-gold); font-weight: 700; display: block; margin-bottom: 0.25rem;">Beverage Pairing</span>
+                <p id="summaryPairing" style="font-size: 0.85rem; font-style: italic; color: var(--text-secondary); margin: 0;">
+                  Sommelier recommendation: Brut Rosé or Sparkling Jasmine Tea
+                </p>
+              </div>
+
+              <button type="button" class="btn btn-gold btn-lg" id="applyBoxToFormBtn" style="width: 100%; margin-top: 1rem;">
+                ✦ Add Selection to Appointment Request
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Monogram & Wax Seal Studio -->
+    <section class="section" id="monogram-studio" aria-label="Interactive Monogram Studio">
+      <div class="container">
+        <div class="text-center max-w-prose" style="margin-bottom: 3rem;">
+          <span class="subheading-editorial" style="justify-content: center;">Bespoke Keepsake</span>
+          <h2>Interactive Monogram &amp; Wax Seal Studio</h2>
+          <p style="margin-top: 1rem;">
+            Test your wedding initials and ceremony date rendered on our signature artisanal spun-gold wax seal, used for bespoke favor packaging and couture stationery.
+          </p>
+        </div>
+
+        <div class="monogram-studio-card max-w-prose">
+          <div class="monogram-inputs-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+            <div class="form-group" style="text-align: left;">
+              <label for="monogramInitials" class="form-label">Couple Initials</label>
+              <input type="text" id="monogramInitials" class="form-input" placeholder="e.g. E & L" value="E & L" maxlength="8" />
+            </div>
+            <div class="form-group" style="text-align: left;">
+              <label for="monogramDate" class="form-label">Wedding Date / Year</label>
+              <input type="text" id="monogramDate" class="form-input" placeholder="e.g. OCT 2026" value="OCTOBER 2026" maxlength="15" />
+            </div>
+          </div>
+
+          <!-- Wax Seal Graphic Display -->
+          <div class="wax-seal-display" id="waxSealDisplay">
+            <span class="seal-monogram-text" id="sealMonogramText">E &amp; L</span>
+            <span class="seal-date-text" id="sealDateText">OCTOBER 2026</span>
+          </div>
+
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
+            Embossed in French metallic brass wax. Provided with all commissioned guest favor boxes and menu suites.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Appointment Request Form Section -->
+    <section class="section" id="booking-section" style="background-color: var(--bg-secondary);" aria-label="Tasting Booking Form">
+      <div class="container max-w-prose">
+        <div class="text-center" style="margin-bottom: 3rem;">
+          <span class="subheading-editorial" style="justify-content: center;">Reserve Your Studio Session</span>
+          <h2>Request a Tasting Appointment</h2>
+          <p style="margin-top: 1rem;">
+            Please provide your details below. We confirm availability and send studio directions within 24 business hours.
+          </p>
+        </div>
+
+        <div class="card-luxury" style="padding: clamp(2rem, 5vw, 3.5rem); border-color: var(--border-strong);">
+          <form class="form-luxury" id="tastingBookingForm">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tastingName" class="form-label">Couple Names *</label>
+                <input type="text" id="tastingName" class="form-input" placeholder="Elena Vance and Marcus Stone" pattern="^[A-Za-z\u00C0-\u024F\s]+$" title="Please enter alphabet letters and spaces only" autocomplete="name" required />
+                <small style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">Alphabets only (A–Z)</small>
+              </div>
+              <div class="form-group">
+                <label for="tastingEmail" class="form-label">Email Address *</label>
+                <input type="email" id="tastingEmail" class="form-input" placeholder="elena@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tastingPhone" class="form-label">Phone Number *</label>
+                <input type="tel" id="tastingPhone" class="form-input" placeholder="5553217890" inputmode="numeric" pattern="^[0-9]+$" title="Please enter numbers only" autocomplete="tel" required />
+                <small style="display: block; font-size: 0.75rem; color: var(--text-muted); margin-top: 0.35rem;">Numbers only (0–9)</small>
+              </div>
+              <div class="form-group">
+                <label for="tastingGuests" class="form-label">Tasting Attendees</label>
+                <select id="tastingGuests" class="form-select">
+                  <option value="2">2 Guests (Included in $120 Tasting)</option>
+                  <option value="3">3 Guests (+$45)</option>
+                  <option value="4">4 Guests (+$90)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tastingDate" class="form-label">Preferred Tasting Date *</label>
+                <input type="date" id="tastingDate" class="form-input" required />
+              </div>
+              <div class="form-group">
+                <label for="tastingWeddingDate" class="form-label">Wedding Date *</label>
+                <input type="date" id="tastingWeddingDate" class="form-input" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="tastingVenue" class="form-label">Venue / City Location</label>
+              <input type="text" id="tastingVenue" class="form-input" placeholder="e.g. Meadowood Estate, Napa Valley" />
+            </div>
+
+            <!-- Dietary Needs Checkboxes -->
+            <div class="form-group">
+              <span class="form-label" style="margin-bottom: 0.5rem; display: block;">Dietary Needs &amp; Allergies</span>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.85rem;">
+                <label class="form-checkbox-label">
+                  <input type="checkbox" name="diet" value="gluten-free" />
+                  <span>Gluten-Free Sponge</span>
+                </label>
+                <label class="form-checkbox-label">
+                  <input type="checkbox" name="diet" value="dairy-free" />
+                  <span>Dairy-Free / Vegan</span>
+                </label>
+                <label class="form-checkbox-label">
+                  <input type="checkbox" name="diet" value="nut-free" />
+                  <span>Strict Nut-Free Prep</span>
+                </label>
+                <label class="form-checkbox-label">
+                  <input type="checkbox" name="diet" value="alcohol-free" />
+                  <span>Alcohol-Free Infusions</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Flavor & Design Notes -->
+            <div class="form-group">
+              <label for="tastingFlavorNotes" class="form-label">Selected Tasting Flavors &amp; Aesthetic Notes</label>
+              <textarea id="tastingFlavorNotes" class="form-textarea" rows="4" placeholder="Mention your favorite flavor profiles or use the interactive Tasting Box builder above to populate this field automatically..."></textarea>
+            </div>
+
+            <div style="margin-top: 1rem;">
+              <button type="submit" class="btn btn-gold btn-lg" style="width: 100%;">
+                Submit Tasting Appointment Request
+              </button>
+              <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">
+                We will email you within 24 business hours to confirm your reservation slot and studio itinerary.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Booking Confirmation Dialog Modal -->
+  <div class="lightbox-backdrop" id="tastingConfirmationModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Appointment Confirmation">
+    <div class="confirmation-modal-dialog" style="background: var(--bg-surface); max-width: 550px; width: 100%; border-radius: var(--radius-lg); padding: 3rem 2.5rem; border: 1px solid var(--border-strong); box-shadow: var(--shadow-luxury); text-align: center; position: relative;">
+      
+      <div style="width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold)); color: #1A1412; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin: 0 auto 1.5rem auto;">
+        ✓
+      </div>
+
+      <span class="subheading-editorial" style="justify-content: center;">Appointment Request Received</span>
+      <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem;">Thank You, <span class="confirm-client-name"></span></h2>
+      <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">
+        Your private tasting studio reservation request has been registered in our studio system.
+      </p>
+
+      <div style="background: var(--bg-secondary); border-radius: var(--radius-md); padding: 1.25rem; text-align: left; font-size: 0.9rem; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 0.65rem;">
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Reservation Ref:</span>
+          <strong class="confirm-ref-code" style="color: var(--accent-gold); font-family: monospace; font-size: 1.1rem;"></strong>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Requested Date:</span>
+          <strong class="confirm-tasting-date" style="color: var(--text-primary);"></strong>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Guest Party:</span>
+          <strong class="confirm-guest-count" style="color: var(--text-primary);"></strong>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <span style="color: var(--text-muted);">Location:</span>
+          <strong style="color: var(--text-primary);">Maison Élysée Private Studio</strong>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-primary modal-close-btn" style="width: 100%;">
+        Done &amp; Return to Studio
+      </button>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="44" height="44" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.6rem;">Maison Élysée</span>
+              <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; max-width: 340px; margin-bottom: 1.5rem;">
+            Bespoke wedding cakes, organic sugar botanical sculptures, and dessert tables for luxury celebrations worldwide.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio &amp; Gallery</a></li>
+            <li><a href="about.html" class="footer-link">The Studio Story</a></li>
+            <li><a href="services.html" class="footer-link">Bespoke Offerings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Experiences</h4>
+          <ul class="footer-nav">
+            <li><a href="tasting.html" class="footer-link">Tasting Appointments</a></li>
+            <li><a href="tasting.html#flavor-builder" class="footer-link">Tasting Box Builder</a></li>
+            <li><a href="blog.html" class="footer-link">Studio Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Coverage</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">The Studio Journal</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+            Subscribe to receive our annual bridal dessert trend forecast and seasonal tasting release dates.
+          </p>
+          <form class="newsletter-form" style="display: flex; gap: 0.5rem;" aria-label="Newsletter subscription form">
+            <input type="email" placeholder="Your email address" required class="form-input" style="padding: 0.6rem 0.85rem; font-size: 0.85rem;" aria-label="Email address" />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Maison Élysée Luxury Cake Studio. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Commission</a>
+          <a href="#" class="footer-link">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/tasting.js"></script>
+</body>
+</html>

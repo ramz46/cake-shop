@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maison Élysée Portfolio — Explore our gallery of bespoke wedding cakes, grand neoclassical confections, and romantic botanical floral creations." />
+  <title>Portfolio &amp; Gallery | Maison Élysée Luxury Wedding Cakes</title>
+
+  <link rel="icon" href="assets/images/logo-elysee.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+  <!-- Anti-Flash Preload Script -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('maison_elysee_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        var savedDir = localStorage.getItem('maison_elysee_dir') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        localStorage.removeItem('maison_elysee_lang');
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-font-style="haute-editorial">
+  <!-- Ambient Luxury Cursor Spotlight (Award-Winning Agency Experience) -->
+  <div class="luxury-cursor-aura" id="luxuryCursorAura" aria-hidden="true"></div>
+
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Site Preloader / Loading Area -->
+  <div id="sitePreloader" class="site-preloader" aria-hidden="true" role="status" aria-label="Loading Maison Élysée">
+    <div class="preloader-inner">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Emblem" class="preloader-logo-img" width="88" height="88" />
+        <div class="preloader-aura"></div>
+      </div>
+      <div class="preloader-brand">
+        <span class="preloader-title">Maison Élysée</span>
+        <span class="preloader-sub">Luxury Cake Studio • Paris</span>
+      </div>
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Maison Élysée Homepage">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="38" height="38" />
+        <div class="brand-text-wrap">
+          <span class="brand-title">Maison Élysée</span>
+          <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+        <a href="portfolio.html" class="nav-link active" data-i18n="navPortfolio">Portfolio</a>
+        <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
+        <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
+        <a href="tasting.html" class="nav-link" data-i18n="navTasting">Tasting Studio</a>
+        <a href="blog.html" class="nav-link" data-i18n="navBlog">Journal</a>
+        <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- In-Navbar Theme & Direction Controls -->
+        <div class="nav-controls">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode" title="Switch Theme">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL" title="Switch between LTR and RTL layout">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+
+        <a href="tasting.html" class="btn btn-primary btn-sm nav-cta-btn"><span class="btn-sparkle">✦</span> <span data-i18n="btnBookTasting">Reserve Tasting</span></a>
+        <button class="menu-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-panel">
+      <div>
+        <div class="drawer-header">
+          <a href="index.html" class="brand-logo drawer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="32" height="32" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.35rem;">Maison Élysée</span>
+              <span class="brand-subtitle" style="font-size: 0.6rem;">Luxury Cakes</span>
+            </div>
+          </a>
+          <button class="drawer-close" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="drawer-nav">
+          <li><a href="index.html" class="drawer-nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="drawer-nav-link active">Portfolio &amp; Gallery</a></li>
+          <li><a href="about.html" class="drawer-nav-link">About Studio &amp; Story</a></li>
+          <li><a href="services.html" class="drawer-nav-link">Services &amp; Offerings</a></li>
+          <li><a href="tasting.html" class="drawer-nav-link">Tasting Appointments</a></li>
+          <li><a href="blog.html" class="drawer-nav-link">The Studio Journal</a></li>
+          <li><a href="contact.html" class="drawer-nav-link">Contact &amp; Coverage</a></li>
+        </ul>
+
+        <div class="drawer-controls" style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-hairline); display: flex; flex-wrap: gap; gap: 0.65rem;">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+      </div>
+      <div style="padding-top: 2rem; border-top: 1px solid var(--border-hairline);">
+        <a href="tasting.html" class="btn btn-gold btn-lg" style="width: 100%;">Book Tasting Experience</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+    
+    <!-- Luxury Page Hero Section -->
+    <section class="page-hero" aria-label="Portfolio Introduction">
+      <!-- Atmospheric Ambient Lighting Aurora -->
+      <div class="hero-ambient-aurora" aria-hidden="true"></div>
+      <!-- Floating Gold Dust Particles -->
+      <div class="hero-dust-container" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="page-hero-grid">
+          <div class="page-hero-content">
+            <span class="subheading-editorial">Curated Visual Archives</span>
+            <h1 class="page-hero-headline">The <span class="gradient-emerald-gold">Portfolio Collection</span></h1>
+            <p class="page-hero-lead">
+              Each commissioned wedding cake is an architectural work of fine pastry art, calibrated to your wedding's aesthetic mood, floral design, and architectural setting.
+            </p>
+
+            <!-- Search Bar in Hero -->
+            <div class="page-hero-search-wrap">
+              <input type="text" id="portfolioSearch" placeholder="Search by style, flavor, or venue..." class="form-input" style="padding-left: 2.8rem; border-radius: var(--radius-pill); width: 100%;" aria-label="Search portfolio" />
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--accent-gold);"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+
+            <!-- Hero Feature Pills -->
+            <div class="page-hero-pills">
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> 100% Scratch Artisanal
+              </span>
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> Hand-Sculpted Sugar Botanicals
+              </span>
+              <span class="page-hero-pill">
+                <span class="page-hero-pill-icon">✦</span> Destination Delivery
+              </span>
+            </div>
+          </div>
+
+          <div class="page-hero-image-wrapper portfolio-hero-showcase">
+            <!-- Dedicated Commission Pill Above Image (Zero Overlap on Cake) -->
+            <div class="portfolio-hero-top-bar">
+              <div class="portfolio-hero-honor-pill" id="heroTopChip">
+                <span class="pulse-gold-dot"></span>
+                <span class="chip-text" id="heroChipText">Royal Commission • Villa d'Este, Lake Como</span>
+              </div>
+            </div>
+
+            <!-- 100% Clean & Unobstructed Cathedral-Arched Cake Frame -->
+            <div class="portfolio-hero-frame" data-tilt="true" id="heroImageFrame" tabindex="0" role="button" aria-label="Click to inspect cake design in high resolution">
+              <div class="hero-img-inner">
+                <img id="portfolioHeroImg" src="assets/images/hero-portfolio.jpg" alt="Venetian Rococo Palace luxury wedding cake centerpiece" class="portfolio-hero-img" loading="eager" />
+                <div class="hero-shimmer-sweep" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Dedicated Info & Inspect Card Below Image (Zero Overlap on Cake) -->
+            <div class="portfolio-hero-caption-card" id="heroBottomBadge">
+              <div class="floating-badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <div class="floating-badge-text">
+                <div class="floating-badge-title" id="heroBadgeTitle">Venetian Rococo Palace</div>
+                <div class="floating-badge-sub" id="heroBadgeSub">5 Royal Tiers • 24K Gold Relief &amp; Sugar Pearls</div>
+              </div>
+              <button class="hero-inspect-action-btn" id="heroInspectBtn" aria-label="Inspect high-resolution details in gallery modal" title="Inspect High-Res Details">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+                <span>Inspect</span>
+              </button>
+            </div>
+
+            <!-- Interactive Cake Style Switcher Pills (Zero Overlap on Cake) -->
+            <div class="hero-cake-switcher" role="tablist" aria-label="Featured signature cakes showcase">
+              <button class="hero-switch-btn active" data-cake="rococo" role="tab" aria-selected="true" aria-controls="heroImageFrame">
+                <span class="switch-dot"></span>
+                <span>Venetian Rococo</span>
+              </button>
+              <button class="hero-switch-btn" data-cake="celeste" role="tab" aria-selected="false" aria-controls="heroImageFrame">
+                <span class="switch-dot"></span>
+                <span>Celestial Winter</span>
+              </button>
+              <button class="hero-switch-btn" data-cake="dawn" role="tab" aria-selected="false" aria-controls="heroImageFrame">
+                <span class="switch-dot"></span>
+                <span>The White Dawn</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Bar & Gallery Grid -->
+    <section class="section" aria-label="Portfolio Gallery">
+      <div class="container">
+        <!-- Filter Controls -->
+        <div class="filter-bar" role="toolbar" aria-label="Filter cakes by style">
+          <button class="filter-btn active" data-filter="all">All Confections</button>
+          <button class="filter-btn" data-filter="classic">Classic &amp; Grand</button>
+          <button class="filter-btn" data-filter="romantic">Romantic &amp; Floral</button>
+          <button class="filter-btn" data-filter="seasonal">Seasonal &amp; Dessert Tables</button>
+        </div>
+
+        <!-- Dynamic Grid Container -->
+        <div class="grid-3" id="portfolioGallery" aria-live="polite">
+          <!-- Populated by js/portfolio.js -->
+        </div>
+
+        <!-- Consultation Banner -->
+        <div class="portfolio-callout-card">
+          <h3 class="callout-card-title">Have a Specific Couture Concept in Mind?</h3>
+          <p class="max-w-prose callout-card-desc">
+            We collaborate closely with couples, wedding planners, and floral designers to create one-of-a-kind sugar architectures that have never been seen before.
+          </p>
+          <a href="contact.html" class="btn btn-gold btn-lg callout-action-btn">
+            <span class="btn-sparkle">✦</span>
+            <span>Submit a Bespoke Commission Inquiry</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Accessible Lightbox Modal -->
+  <div class="lightbox-backdrop" id="portfolioLightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Cake design details modal">
+    <div class="lightbox-container">
+      <button class="lightbox-close" aria-label="Close modal">&times;</button>
+      
+      <div class="lightbox-img-pane">
+        <img src="" alt="" class="lightbox-img" />
+      </div>
+
+      <div class="lightbox-info-pane">
+        <div>
+          <span class="lightbox-category" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight: 600; color: var(--accent-gold); display: block; margin-bottom: 0.5rem;"></span>
+          <h2 class="lightbox-title" style="font-size: 2rem; margin-bottom: 1rem;"></h2>
+          <p class="lightbox-desc" style="font-size: 0.95rem; line-height: 1.65; margin-bottom: 1.5rem; color: var(--text-secondary);"></p>
+          
+          <div style="background: var(--bg-secondary); border-radius: var(--radius-sm); padding: 1.25rem; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <div style="display: flex; justify-content: space-between;">
+              <span style="color: var(--text-muted);">Structure &amp; Scale:</span>
+              <strong class="lightbox-tiers" style="color: var(--text-primary);"></strong>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span style="color: var(--text-muted);">Signature Flavors:</span>
+              <strong class="lightbox-flavors" style="color: var(--text-primary); text-align: right;"></strong>
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+              <span style="color: var(--text-muted);">Wedding Setting:</span>
+              <strong class="lightbox-venue" style="color: var(--accent-gold); text-align: right;"></strong>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--border-hairline); padding-top: 1.5rem;">
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="btn btn-secondary btn-sm lightbox-prev" aria-label="Previous cake design">← Prev</button>
+            <button class="btn btn-secondary btn-sm lightbox-next" aria-label="Next cake design">Next →</button>
+          </div>
+          <a href="contact.html" class="btn btn-primary btn-sm lightbox-inquire-btn">Inquire for This Style</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="44" height="44" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.6rem;">Maison Élysée</span>
+              <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; max-width: 340px; margin-bottom: 1.5rem;">
+            Bespoke wedding cakes, organic sugar botanical sculptures, and dessert tables for luxury celebrations worldwide.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio &amp; Gallery</a></li>
+            <li><a href="about.html" class="footer-link">The Studio Story</a></li>
+            <li><a href="services.html" class="footer-link">Bespoke Offerings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Experiences</h4>
+          <ul class="footer-nav">
+            <li><a href="tasting.html" class="footer-link">Tasting Appointments</a></li>
+            <li><a href="tasting.html#flavor-builder" class="footer-link">Tasting Box Builder</a></li>
+            <li><a href="blog.html" class="footer-link">Studio Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Coverage</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">The Studio Journal</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+            Subscribe to receive our annual bridal dessert trend forecast and seasonal tasting release dates.
+          </p>
+          <form class="newsletter-form" style="display: flex; gap: 0.5rem;" aria-label="Newsletter subscription form">
+            <input type="email" placeholder="Your email address" required class="form-input" style="padding: 0.6rem 0.85rem; font-size: 0.85rem;" aria-label="Email address" />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Maison Élysée Luxury Cake Studio. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Commission</a>
+          <a href="#" class="footer-link">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

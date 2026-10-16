@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Studio Journal — Insights, flavor pairing guides, 2026 wedding cake trends, and dessert table styling from Maison Élysée." />
+  <title>The Studio Journal | Maison Élysée Luxury Wedding Cakes</title>
+
+  <link rel="icon" href="assets/images/logo-elysee.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+  <!-- Anti-Flash Preload Script -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('maison_elysee_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        var savedDir = localStorage.getItem('maison_elysee_dir') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        localStorage.removeItem('maison_elysee_lang');
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-font-style="haute-editorial">
+  <!-- Ambient Luxury Cursor Spotlight (Award-Winning Agency Experience) -->
+  <div class="luxury-cursor-aura" id="luxuryCursorAura" aria-hidden="true"></div>
+
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Site Preloader / Loading Area -->
+  <div id="sitePreloader" class="site-preloader" aria-hidden="true" role="status" aria-label="Loading Maison Élysée">
+    <div class="preloader-inner">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Emblem" class="preloader-logo-img" width="88" height="88" />
+        <div class="preloader-aura"></div>
+      </div>
+      <div class="preloader-brand">
+        <span class="preloader-title">Maison Élysée</span>
+        <span class="preloader-sub">Luxury Cake Studio • Paris</span>
+      </div>
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Maison Élysée Homepage">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="38" height="38" />
+        <div class="brand-text-wrap">
+          <span class="brand-title">Maison Élysée</span>
+          <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+        <a href="portfolio.html" class="nav-link" data-i18n="navPortfolio">Portfolio</a>
+        <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
+        <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
+        <a href="tasting.html" class="nav-link" data-i18n="navTasting">Tasting Studio</a>
+        <a href="blog.html" class="nav-link active" data-i18n="navBlog">Journal</a>
+        <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- In-Navbar Theme & Direction Controls -->
+        <div class="nav-controls">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode" title="Switch Theme">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL" title="Switch between LTR and RTL layout">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+
+        <a href="tasting.html" class="btn btn-primary btn-sm nav-cta-btn"><span class="btn-sparkle">✦</span> <span data-i18n="btnBookTasting">Reserve Tasting</span></a>
+        <button class="menu-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-panel">
+      <div>
+        <div class="drawer-header">
+          <a href="index.html" class="brand-logo drawer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="32" height="32" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.35rem;">Maison Élysée</span>
+              <span class="brand-subtitle" style="font-size: 0.6rem;">Luxury Cakes</span>
+            </div>
+          </a>
+          <button class="drawer-close" aria-label="Close menu">&times;</button>
+        </div>
+        <ul class="drawer-nav">
+          <li><a href="index.html" class="drawer-nav-link">Home</a></li>
+          <li><a href="portfolio.html" class="drawer-nav-link">Portfolio &amp; Gallery</a></li>
+          <li><a href="about.html" class="drawer-nav-link">About Studio &amp; Story</a></li>
+          <li><a href="services.html" class="drawer-nav-link">Services &amp; Offerings</a></li>
+          <li><a href="tasting.html" class="drawer-nav-link">Tasting Appointments</a></li>
+          <li><a href="blog.html" class="drawer-nav-link active">The Studio Journal</a></li>
+          <li><a href="contact.html" class="drawer-nav-link">Contact &amp; Coverage</a></li>
+        </ul>
+
+        <div class="drawer-controls" style="margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border-hairline); display: flex; flex-wrap: wrap; gap: 0.65rem;">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">RTL</span>
+          </button>
+        </div>
+      </div>
+      <div style="padding-top: 2rem; border-top: 1px solid var(--border-hairline);">
+        <a href="tasting.html" class="btn btn-gold btn-lg" style="width: 100%;">Book Tasting Experience</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Luxury Page Hero Section -->
+    <section class="page-hero" aria-label="Journal Introduction">
+      <!-- Atmospheric Ambient Lighting Aurora -->
+      <div class="hero-ambient-aurora" aria-hidden="true"></div>
+      <!-- Floating Gold Dust Particles -->
+      <div class="hero-dust-container" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="page-hero-grid">
+          <div class="page-hero-content">
+            
+            <!-- Dedicated Volume Chip -->
+            <div class="journal-hero-honor-pill" style="margin-bottom: 1.25rem;">
+              <span class="pulse-gold-dot"></span>
+              <span class="chip-text">Volume IV • Curated Pastry Gazette</span>
+            </div>
+
+            <span class="subheading-editorial">The Studio Journal</span>
+            <h1 class="page-hero-headline">Chronicles of Sugar Art, <span class="gradient-emerald-gold">Architecture &amp; Pastry</span></h1>
+            <p class="page-hero-lead">
+              Behind-the-scenes culinary essays, masterclass flavor pairings, 2026 bridal trend forecasts, and portion architecture from Chef Geneviève Moreau.
+            </p>
+
+            <!-- Search Input in Hero -->
+            <div class="page-hero-search-wrap">
+              <input type="text" id="blogSearchInput" placeholder="Search essays by keyword, flavor, or trend..." class="form-input" style="padding-left: 2.8rem; border-radius: var(--radius-pill); width: 100%;" aria-label="Search articles" />
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="position: absolute; left: 1.15rem; top: 50%; transform: translateY(-50%); color: var(--accent-gold); pointer-events: none;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+
+            <!-- Hero Feature Pills / Interactive Quick Filters -->
+            <div class="page-hero-pills" id="heroTopicPills" role="toolbar" aria-label="Journal Topic Filters">
+              <button class="hero-topic-btn active" data-category="all" aria-pressed="true">
+                <span class="page-hero-pill-icon">✦</span> All Topics (6)
+              </button>
+              <button class="hero-topic-btn" data-category="design" aria-pressed="false">
+                <span class="page-hero-pill-icon">✦</span> Design Inspiration
+              </button>
+              <button class="hero-topic-btn" data-category="flavors" aria-pressed="false">
+                <span class="page-hero-pill-icon">✦</span> Flavor Trends
+              </button>
+              <button class="hero-topic-btn" data-category="planning" aria-pressed="false">
+                <span class="page-hero-pill-icon">✦</span> Wedding Planning
+              </button>
+            </div>
+
+            <!-- Editorial Stats / Quick Reading Metric -->
+            <div class="journal-hero-metrics" aria-label="Journal Editorial Highlights">
+              <div class="journal-metric-item">
+                <span class="journal-metric-val">6 In-Depth</span>
+                <span class="journal-metric-lbl">Curated Articles</span>
+              </div>
+              <div class="journal-metric-item">
+                <span class="journal-metric-val">2026 Forecast</span>
+                <span class="journal-metric-lbl">Haute Trends</span>
+              </div>
+              <div class="journal-metric-item">
+                <span class="journal-metric-val">5–9 Mins</span>
+                <span class="journal-metric-lbl">Average Read</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Showcase on the Right (Cathedral-Arched Frame with Light Sweep) -->
+          <div class="page-hero-image-wrapper journal-hero-showcase">
+            <!-- Dedicated Commission Pill Above Image -->
+            <div class="journal-hero-top-bar">
+              <div class="journal-hero-honor-pill" id="journalHeroTopChip">
+                <span class="pulse-gold-dot"></span>
+                <span class="chip-text">Featured Cover Story • May 2026</span>
+              </div>
+            </div>
+
+            <!-- Cathedral-Arched Cake Frame with 3D Tilt & Shimmer Sweep -->
+            <div class="journal-hero-frame" data-tilt="true" id="journalHeroImageFrame" tabindex="0" role="button" aria-label="Read featured journal cover story: Architectural Monoliths & Sugar Lace">
+              <div class="hero-img-inner">
+                <img id="journalHeroImg" src="assets/images/hero-blog.jpg" alt="The Tuileries Garden five-tier luxury architectural wedding cake with sugar flowers" class="journal-hero-img" loading="eager" />
+                <div class="hero-shimmer-sweep" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- Dedicated Info Card Below Image -->
+            <div class="journal-hero-caption-card" id="journalHeroBottomBadge">
+              <div class="floating-badge-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div class="floating-badge-text">
+                <div class="floating-badge-title">Architectural Monoliths &amp; Sugar Lace</div>
+                <div class="floating-badge-sub">2026 Bridal Trend Forecast &bull; 6 min read</div>
+              </div>
+              <a href="blog-post.html?slug=architectural-wedding-cake-trends-2026" class="hero-inspect-action-btn" aria-label="Read full lead article" title="Read Full Article">
+                <span>Read Essay</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters & Articles Grid -->
+    <section class="section" aria-label="Articles Listing">
+      <div class="container">
+        
+        <!-- Category Filter Buttons -->
+        <div class="filter-bar" role="toolbar" aria-label="Filter journal articles by category">
+          <button class="filter-btn active blog-filter-btn" data-category="all">All Essays</button>
+          <button class="filter-btn blog-filter-btn" data-category="design">Design Inspiration</button>
+          <button class="filter-btn blog-filter-btn" data-category="flavors">Flavor Trends</button>
+          <button class="filter-btn blog-filter-btn" data-category="planning">Wedding Planning</button>
+        </div>
+
+        <!-- Dynamic Grid Container -->
+        <div class="grid-3" id="blogGrid" aria-live="polite">
+          <!-- Populated by js/blog.js -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="44" height="44" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.6rem;">Maison Élysée</span>
+              <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; max-width: 340px; margin-bottom: 1.5rem;">
+            Bespoke wedding cakes, organic sugar botanical sculptures, and dessert tables for luxury celebrations worldwide.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio &amp; Gallery</a></li>
+            <li><a href="about.html" class="footer-link">The Studio Story</a></li>
+            <li><a href="services.html" class="footer-link">Bespoke Offerings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Experiences</h4>
+          <ul class="footer-nav">
+            <li><a href="tasting.html" class="footer-link">Tasting Appointments</a></li>
+            <li><a href="tasting.html#flavor-builder" class="footer-link">Tasting Box Builder</a></li>
+            <li><a href="blog.html" class="footer-link">Studio Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Coverage</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">The Studio Journal</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+            Subscribe to receive our annual bridal dessert trend forecast and seasonal tasting release dates.
+          </p>
+          <form class="newsletter-form" style="display: flex; gap: 0.5rem;" aria-label="Newsletter subscription form">
+            <input type="email" placeholder="Your email address" required class="form-input" style="padding: 0.6rem 0.85rem; font-size: 0.85rem;" aria-label="Email address" />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Maison Élysée Luxury Cake Studio. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Commission</a>
+          <a href="#" class="footer-link">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>
