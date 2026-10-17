@@ -155,7 +155,7 @@
         if (icon) {
           icon.classList.add('rtl-active');
         }
-        if (label) label.textContent = 'LTR';
+        if (label) label.textContent = 'RTL';
         btn.classList.add('active');
         btn.setAttribute('aria-label', 'RTL mode active. Click to switch to LTR mode');
         btn.setAttribute('title', 'RTL mode active. Click to switch to LTR mode');
@@ -163,7 +163,7 @@
         if (icon) {
           icon.classList.remove('rtl-active');
         }
-        if (label) label.textContent = 'RTL';
+        if (label) label.textContent = 'LTR';
         btn.classList.remove('active');
         btn.setAttribute('aria-label', 'LTR mode active. Click to switch to RTL mode');
         btn.setAttribute('title', 'LTR mode active. Click to switch to RTL mode');
