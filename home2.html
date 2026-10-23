@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Maison Élysée Boutique — Artisanal Parisian macarons, sculpted single-portion entremets, couture gift boxes, and afternoon tea delicacies crafted fresh daily." />
+  <title>Maison Élysée | Petite Patisserie &amp; Luxury Boutique — Paris</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/logo-elysee.svg" type="image/svg+xml" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+
+  <!-- Anti-Flash Preload Script -->
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem('maison_elysee_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = savedTheme || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        var savedDir = localStorage.getItem('maison_elysee_dir') || 'ltr';
+        document.documentElement.setAttribute('dir', savedDir);
+        localStorage.removeItem('maison_elysee_lang');
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-font-style="haute-editorial">
+  <!-- Ambient Luxury Cursor Spotlight -->
+  <div class="luxury-cursor-aura" id="luxuryCursorAura" aria-hidden="true"></div>
+
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+  <!-- Site Preloader -->
+  <div id="sitePreloader" class="site-preloader" aria-hidden="true" role="status" aria-label="Loading Maison Élysée">
+    <div class="preloader-inner">
+      <div class="preloader-logo-wrap">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Emblem" class="preloader-logo-img" width="88" height="88" />
+        <div class="preloader-aura"></div>
+      </div>
+      <div class="preloader-brand">
+        <span class="preloader-title">Maison Élysée</span>
+        <span class="preloader-sub">Petite Patisserie &bull; Boutique Paris</span>
+      </div>
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Maison Élysée Homepage">
+        <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="38" height="38" />
+        <div class="brand-text-wrap">
+          <span class="brand-title">Maison Élysée</span>
+          <span class="brand-subtitle">Petite Patisserie &amp; Boutique</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav with Home Dropdown -->
+      <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+        <div class="nav-item has-dropdown">
+          <a href="home2.html" class="nav-link dropdown-toggle active" aria-expanded="false" aria-haspopup="true">
+            <span data-i18n="navHome">Home</span>
+            <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="currentColor" aria-hidden="true"><path d="M0 0h10L5 6z"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="index.html" class="dropdown-item">
+              <span class="dropdown-badge">Home 1</span>
+              <div class="dropdown-content">
+                <span class="dropdown-title">Haute Couture Studio</span>
+                <span class="dropdown-desc">Grand bespoke wedding gateaux &amp; architectural sugar art</span>
+              </div>
+            </a>
+            <a href="home2.html" class="dropdown-item active">
+              <span class="dropdown-badge badge-gold">Home 2</span>
+              <div class="dropdown-content">
+                <span class="dropdown-title">Petite Patisserie &amp; Boutique</span>
+                <span class="dropdown-desc">Artisan confections, curated gift boxes &amp; boutique ordering</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="portfolio.html" class="nav-link" data-i18n="navPortfolio">Portfolio</a>
+        <a href="about.html" class="nav-link" data-i18n="navAbout">About</a>
+        <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
+        <a href="tasting.html" class="nav-link" data-i18n="navTasting">Tasting Studio</a>
+        <a href="blog.html" class="nav-link" data-i18n="navBlog">Journal</a>
+        <a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- In-Navbar Theme Controls: KEEP THEME ICONS ONLY -->
+        <div class="nav-controls">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode" title="Switch between Light and Dark mode">
+            <span class="theme-icon">☀️</span>
+          </button>
+        </div>
+
+        <!-- Pure CSS Nav CTA Button without sticky cursor tracking -->
+        <a href="tasting.html" class="btn btn-primary btn-sm nav-cta-btn"><span class="btn-sparkle">✦</span> <span data-i18n="btnBookTasting">Reserve Tasting</span></a>
+        
+        <button class="menu-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-panel">
+      <div>
+        <div class="drawer-header">
+          <a href="index.html" class="brand-logo drawer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="32" height="32" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.35rem;">Maison Élysée</span>
+              <span class="brand-subtitle" style="font-size: 0.6rem;">Petite Patisserie</span>
+            </div>
+          </a>
+          <button class="drawer-close" aria-label="Close menu">&times;</button>
+        </div>
+
+        <ul class="drawer-nav">
+          <li class="drawer-has-dropdown">
+            <button class="drawer-dropdown-btn" aria-expanded="true">
+              <span>Home Experiences</span>
+              <svg class="drawer-arrow" width="10" height="6" viewBox="0 0 10 6" fill="currentColor"><path d="M0 0h10L5 6z"/></svg>
+            </button>
+            <ul class="drawer-subnav">
+              <li><a href="index.html" class="drawer-nav-link">Home 1 — Couture Studio</a></li>
+              <li><a href="home2.html" class="drawer-nav-link active">Home 2 — Boutique Patisserie</a></li>
+            </ul>
+          </li>
+          <li><a href="portfolio.html" class="drawer-nav-link">Portfolio &amp; Gallery</a></li>
+          <li><a href="about.html" class="drawer-nav-link">About Studio &amp; Story</a></li>
+          <li><a href="services.html" class="drawer-nav-link">Services &amp; Offerings</a></li>
+          <li><a href="tasting.html" class="drawer-nav-link">Tasting Appointments</a></li>
+          <li><a href="blog.html" class="drawer-nav-link">The Studio Journal</a></li>
+          <li><a href="contact.html" class="drawer-nav-link">Contact &amp; Coverage</a></li>
+        </ul>
+
+        <div class="drawer-controls">
+          <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode">
+            <span class="theme-icon">☀️</span>
+            <span class="theme-label">Light</span>
+          </button>
+          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL">
+            <span class="dir-icon">⇄</span>
+            <span class="dir-label">LTR</span>
+          </button>
+        </div>
+      </div>
+      <div class="drawer-cta-wrap">
+        <a href="tasting.html" class="btn btn-gold btn-lg" style="width: 100%;">Book Tasting Experience</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    
+    <!-- Hero Section (Boutique & Daily Atelier) -->
+    <section class="boutique-hero" aria-label="Boutique Introduction">
+      <div class="hero-ambient-aurora" aria-hidden="true"></div>
+      <div class="hero-dust-container" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="boutique-hero-grid">
+          
+          <div class="boutique-hero-text">
+            <div class="boutique-status-card">
+              <span class="boutique-status-dot"></span>
+              <span>Boutique Open Today &bull; Fresh Morning Confections Ready</span>
+            </div>
+
+            <h1 class="font-serif-display" style="font-size: clamp(2.4rem, 5.2vw, 4.4rem); line-height: 1.1; margin-bottom: 1.25rem;">
+              Petite Patisserie,<br />
+              <span class="gradient-emerald-gold">Monumental Flavor</span>
+            </h1>
+
+            <p style="font-size: clamp(1rem, 1.4vw, 1.15rem); color: var(--text-secondary); line-height: 1.7; max-width: 540px; margin-bottom: 2rem;">
+              Sculpted jewel entremets, gold-brushed macarons, and artisanal Parisian canelés crafted fresh daily with single-origin Grand Cru chocolate and Normandy AOP butter.
+            </p>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; margin-bottom: 2.5rem;">
+              <a href="#boutique-menu" class="btn btn-primary btn-lg"><span class="btn-sparkle">✦</span> Explore Daily Menu</a>
+              <a href="#box-builder" class="btn btn-secondary btn-lg">Assemble Gift Box</a>
+            </div>
+
+            <!-- Value Highlights Strip -->
+            <div style="display: flex; gap: clamp(1rem, 2.5vw, 2.25rem); flex-wrap: wrap; border-top: 1px solid var(--border-hairline); padding-top: 1.5rem;">
+              <div>
+                <strong style="display: block; font-size: 1.35rem; color: var(--accent-gold); font-family: var(--font-serif-display);">100%</strong>
+                <span style="font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Organic Botanicals</span>
+              </div>
+              <div>
+                <strong style="display: block; font-size: 1.35rem; color: var(--primary-emerald); font-family: var(--font-serif-display);">Same-Day</strong>
+                <span style="font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Paris Refrigerated Courier</span>
+              </div>
+              <div>
+                <strong style="display: block; font-size: 1.35rem; color: var(--accent-gold); font-family: var(--font-serif-display);">3-Star</strong>
+                <span style="font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Pastry Heritage</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image with Interactive 3D Cards -->
+          <div class="boutique-hero-visual">
+            <div class="boutique-hero-frame interactive-3d-tilt" data-tilt="true">
+              <img src="assets/images/cake-dessert-table.jpg" alt="Maison Élysée Curated Boutique Confections Table" class="boutique-hero-img" />
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="boutique-float-tag tag-top-right">
+              <span>🏆</span>
+              <span>Michelin Gourmet Feature 2026</span>
+            </div>
+
+            <div class="boutique-float-tag tag-bottom-left">
+              <span>✨</span>
+              <span>Velvet &amp; Gold Silk Packaging</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Gift Box Customizer (L'Atelier des Coffrets) -->
+    <section id="box-builder" class="section" style="background: var(--bg-secondary); padding: 5rem 0; scroll-margin-top: 100px;" aria-label="Custom Gift Box Builder">
+      <div class="container">
+        
+        <div style="text-align: center; max-width: 680px; margin: 0 auto 3.5rem;">
+          <span style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent-gold); display: block; margin-bottom: 0.6rem;">L'Atelier des Coffrets</span>
+          <h2 class="font-serif-display" style="font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.2; margin-bottom: 1rem;">Assemble Your Bespoke Box</h2>
+          <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.98rem;">
+            Curate an exclusive selection of hand-decorated macarons, mini entremets, and gold leaf treats nestled inside our luxury presentation gift cases.
+          </p>
+        </div>
+
+        <div class="box-builder-card">
+          
+          <!-- Step 1: Select Box Size -->
+          <div class="builder-step-title">
+            <span class="builder-step-num">1</span>
+            <span>Choose Your Box Capacity</span>
+          </div>
+
+          <div class="size-selector-grid">
+            <div class="size-card active" data-capacity="6" data-base-price="38">
+              <div>
+                <strong style="font-size: 1.1rem; display: block; margin-bottom: 0.35rem; color: var(--text-primary);">Demi-Écrin</strong>
+                <span style="font-size: 0.8rem; color: var(--text-secondary);">6 Signature Pieces</span>
+              </div>
+              <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: baseline;">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">Intimate Gift</span>
+                <span style="font-size: 1.15rem; font-weight: 700; color: var(--primary-emerald); font-family: var(--font-serif-display);">€38</span>
+              </div>
+            </div>
+
+            <div class="size-card" data-capacity="12" data-base-price="72">
+              <div>
+                <strong style="font-size: 1.1rem; display: block; margin-bottom: 0.35rem; color: var(--text-primary);">Grand Écrin</strong>
+                <span style="font-size: 0.8rem; color: var(--text-secondary);">12 Curated Delicacies</span>
+              </div>
+              <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: baseline;">
+                <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600; color: var(--accent-gold);">Most Popular</span>
+                <span style="font-size: 1.15rem; font-weight: 700; color: var(--primary-emerald); font-family: var(--font-serif-display);">€72</span>
+              </div>
+            </div>
+
+            <div class="size-card" data-capacity="24" data-base-price="135">
+              <div>
+                <strong style="font-size: 1.1rem; display: block; margin-bottom: 0.35rem; color: var(--text-primary);">Coffret Impérial</strong>
+                <span style="font-size: 0.8rem; color: var(--text-secondary);">24 Tasting Sensations</span>
+              </div>
+              <div style="margin-top: 1rem; display: flex; justify-content: space-between; align-items: baseline;">
+                <span style="font-size: 0.75rem; color: var(--text-muted);">VIP Soirée</span>
+                <span style="font-size: 1.15rem; font-weight: 700; color: var(--primary-emerald); font-family: var(--font-serif-display);">€135</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Choose Presentation -->
+          <div class="builder-step-title">
+            <span class="builder-step-num">2</span>
+            <span>Select Luxury Presentation Finish</span>
+          </div>
+
+          <div class="presentation-selector-grid">
+            <div class="pres-card active" data-style="emerald">
+              <span class="pres-swatch" style="background: #047857;"></span>
+              <div>
+                <strong style="font-size: 0.92rem; display: block; color: var(--text-primary);">Élysée Emerald Velvet</strong>
+                <span style="font-size: 0.72rem; color: var(--text-secondary);">Dark forest velvet with embossed gold crest</span>
+              </div>
+            </div>
+
+            <div class="pres-card" data-style="gold">
+              <span class="pres-swatch" style="background: #D4AF65;"></span>
+              <div>
+                <strong style="font-size: 0.92rem; display: block; color: var(--text-primary);">Imperial Gold Filigree</strong>
+                <span style="font-size: 0.72rem; color: var(--text-secondary);">Champagne textured foil &amp; satin tie</span>
+              </div>
+            </div>
+
+            <div class="pres-card" data-style="rose">
+              <span class="pres-swatch" style="background: #C98A7D;"></span>
+              <div>
+                <strong style="font-size: 0.92rem; display: block; color: var(--text-primary);">Rose Silk Atelier</strong>
+                <span style="font-size: 0.72rem; color: var(--text-secondary);">Blush silk weave &amp; wax seal emblem</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Pick Flavors -->
+          <div class="builder-step-title">
+            <span class="builder-step-num">3</span>
+            <span>Choose Your Pieces (<span id="boxCountDisplay">0</span> / <span id="boxCapDisplay">6</span> selected)</span>
+          </div>
+
+          <div class="items-picker-grid">
+            <div class="picker-item-card" data-item="pistache">
+              <div>
+                <strong style="font-size: 0.9rem; display: block; color: var(--text-primary);">Pistache de Bronte</strong>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">Sicilian pistachio praliné</span>
+              </div>
+              <div class="picker-qty-controls">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Decrease quantity">&minus;</button>
+                <span class="qty-val" data-qty="0">0</span>
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="picker-item-card" data-item="vanille">
+              <div>
+                <strong style="font-size: 0.9rem; display: block; color: var(--text-primary);">Fleur de Vanille</strong>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">Tahitian vanilla bean mousse</span>
+              </div>
+              <div class="picker-qty-controls">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Decrease quantity">&minus;</button>
+                <span class="qty-val" data-qty="0">0</span>
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="picker-item-card" data-item="framboise">
+              <div>
+                <strong style="font-size: 0.9rem; display: block; color: var(--text-primary);">Framboise &amp; Rose</strong>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">Tart raspberry &amp; Ispahan rose</span>
+              </div>
+              <div class="picker-qty-controls">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Decrease quantity">&minus;</button>
+                <span class="qty-val" data-qty="0">0</span>
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="picker-item-card" data-item="opera">
+              <div>
+                <strong style="font-size: 0.9rem; display: block; color: var(--text-primary);">Opéra Guanaja 70%</strong>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">Dark chocolate &amp; espresso</span>
+              </div>
+              <div class="picker-qty-controls">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Decrease quantity">&minus;</button>
+                <span class="qty-val" data-qty="0">0</span>
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="picker-item-card" data-item="caramel">
+              <div>
+                <strong style="font-size: 0.9rem; display: block; color: var(--text-primary);">Caramel Fleur de Sel</strong>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">Guerande sea salt butter</span>
+              </div>
+              <div class="picker-qty-controls">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Decrease quantity">&minus;</button>
+                <span class="qty-val" data-qty="0">0</span>
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+
+            <div class="picker-item-card" data-item="canele">
+              <div>
+                <strong style="font-size: 0.9rem; display: block; color: var(--text-primary);">Canelé Grand Siècle</strong>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">Caramelized rum beeswax</span>
+              </div>
+              <div class="picker-qty-controls">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Decrease quantity">&minus;</button>
+                <span class="qty-val" data-qty="0">0</span>
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Increase quantity">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Summary & Action Bar -->
+          <div class="builder-summary-bar">
+            <div>
+              <span style="font-size: 0.78rem; color: var(--text-muted); display: block;">Total Box Price:</span>
+              <span id="boxTotalPrice" style="font-size: 1.85rem; font-weight: 700; color: var(--primary-emerald); font-family: var(--font-serif-display);">€38.00</span>
+              <span style="font-size: 0.75rem; color: var(--text-secondary); margin-left: 0.5rem;">(Includes luxury case &amp; courier card)</span>
+            </div>
+
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+              <button type="button" id="autoFillBtn" class="btn btn-secondary btn-sm">Auto-Fill Chef Selection</button>
+              <button type="button" id="reserveBoxBtn" class="btn btn-primary"><span class="btn-sparkle">✦</span> Reserve &amp; Deliver Box</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Signature Boutique Creations (Filterable Menu) -->
+    <section id="boutique-menu" class="section" style="padding: 5.5rem 0;" aria-label="Signature Boutique Creations">
+      <div class="container">
+        
+        <div style="text-align: center; max-width: 680px; margin: 0 auto 2.5rem;">
+          <span style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent-gold); display: block; margin-bottom: 0.6rem;">Le Comptoir Élysée</span>
+          <h2 class="font-serif-display" style="font-size: clamp(2.2rem, 3.8vw, 3.2rem); line-height: 1.2; margin-bottom: 1rem;">Daily Artisan Catalog</h2>
+          <p style="color: var(--text-secondary); line-height: 1.65; font-size: 0.98rem;">
+            Individual entremets, couture macarons, and limited seasonal creations freshly glazed every dawn in our laboratory.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="boutique-filter-bar">
+          <button class="boutique-filter-btn active" data-filter="all">All Creations</button>
+          <button class="boutique-filter-btn" data-filter="macarons">Macarons Couture</button>
+          <button class="boutique-filter-btn" data-filter="entremets">Sculpted Entremets</button>
+          <button class="boutique-filter-btn" data-filter="viennoiserie">Viennoiserie &amp; Tarts</button>
+          <button class="boutique-filter-btn" data-filter="favors">Guest Favors &amp; Bars</button>
+        </div>
+
+        <!-- Items Grid -->
+        <div class="boutique-catalog-grid">
+          
+          <!-- Item 1: Macarons -->
+          <div class="boutique-card" data-category="macarons">
+            <div class="boutique-card-img-wrap">
+              <img src="assets/images/favors-confections.jpg" alt="Coffret Macarons de la Reine" class="boutique-card-img" loading="lazy" />
+            </div>
+            <div class="boutique-card-body">
+              <div class="boutique-tag-row">
+                <span class="dietary-tag">Gluten-Free</span>
+                <span class="dietary-tag tag-accent">24k Gold Leaf</span>
+              </div>
+              <h3 class="font-serif-display" style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--text-primary);">Macarons de la Reine</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.25rem;">
+                Set of 8 jewel-toned shells filled with Madagascar Bourbon vanilla ganache and raspberry rose gelee.
+              </p>
+              <div class="boutique-card-footer">
+                <span class="boutique-price">€28.00</span>
+                <a href="contact.html?item=macarons" class="btn btn-secondary btn-sm">Order Pickup</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Entremet Aurore -->
+          <div class="boutique-card" data-category="entremets">
+            <div class="boutique-card-img-wrap">
+              <img src="assets/images/cake-aurore-blanche.jpg" alt="Entremet Miroir Aurore Blanche" class="boutique-card-img" loading="lazy" />
+            </div>
+            <div class="boutique-card-body">
+              <div class="boutique-tag-row">
+                <span class="dietary-tag">Signature</span>
+                <span class="dietary-tag tag-accent">Valrhona Opalys</span>
+              </div>
+              <h3 class="font-serif-display" style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--text-primary);">Aurore Blanche Single Dome</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.25rem;">
+                White velvet chocolate glaze with yuzu confit heart, crispy hazelnut feuilletine, and almond sponge.
+              </p>
+              <div class="boutique-card-footer">
+                <span class="boutique-price">€14.50</span>
+                <a href="contact.html?item=aurore-dome" class="btn btn-secondary btn-sm">Order Pickup</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Opera Monolith -->
+          <div class="boutique-card" data-category="entremets">
+            <div class="boutique-card-img-wrap">
+              <img src="assets/images/cake-opera-monolith.jpg" alt="Petite Barre Opéra Monolith" class="boutique-card-img" loading="lazy" />
+            </div>
+            <div class="boutique-card-body">
+              <div class="boutique-tag-row">
+                <span class="dietary-tag">Intense Dark</span>
+                <span class="dietary-tag tag-accent">Single-Origin Coffee</span>
+              </div>
+              <h3 class="font-serif-display" style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--text-primary);">Petite Barre Opéra Monolith</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.25rem;">
+                Seven micro-layers of joconde almond sponge, Ethiopian espresso buttercream, and dark Guanaja ganache.
+              </p>
+              <div class="boutique-card-footer">
+                <span class="boutique-price">€13.00</span>
+                <a href="contact.html?item=opera-bar" class="btn btn-secondary btn-sm">Order Pickup</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Tartelette Porcelaine -->
+          <div class="boutique-card" data-category="viennoiserie">
+            <div class="boutique-card-img-wrap">
+              <img src="assets/images/cake-porcelaine.jpg" alt="Tartelette Porcelaine aux Fraises des Bois" class="boutique-card-img" loading="lazy" />
+            </div>
+            <div class="boutique-card-body">
+              <div class="boutique-tag-row">
+                <span class="dietary-tag">Seasonal</span>
+                <span class="dietary-tag tag-accent">Wild Strawberries</span>
+              </div>
+              <h3 class="font-serif-display" style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--text-primary);">Tartelette Porcelaine</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.25rem;">
+                Crisp sugar sable crust, elderflower diplomat cream, and wild alpine strawberries dressed in edible glaze.
+              </p>
+              <div class="boutique-card-footer">
+                <span class="boutique-price">€15.00</span>
+                <a href="contact.html?item=tartelette-porcelaine" class="btn btn-secondary btn-sm">Order Pickup</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Canelés Grand Siècle -->
+          <div class="boutique-card" data-category="favors">
+            <div class="boutique-card-img-wrap">
+              <img src="assets/images/guest-favors-luxury.jpg" alt="Coffret Canelés de Bordeaux Grand Siècle" class="boutique-card-img" loading="lazy" />
+            </div>
+            <div class="boutique-card-body">
+              <div class="boutique-tag-row">
+                <span class="dietary-tag">Classic French</span>
+                <span class="dietary-tag tag-accent">Aged Rum</span>
+              </div>
+              <h3 class="font-serif-display" style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--text-primary);">Canelés de Bordeaux (Set of 6)</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.25rem;">
+                Crisp caramelized beeswax crust giving way to a custardy, aromatic heart infused with Martinique rum.
+              </p>
+              <div class="boutique-card-footer">
+                <span class="boutique-price">€22.00</span>
+                <a href="contact.html?item=caneles-set" class="btn btn-secondary btn-sm">Order Pickup</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Solstice d'Or Eclair -->
+          <div class="boutique-card" data-category="viennoiserie">
+            <div class="boutique-card-img-wrap">
+              <img src="assets/images/cake-solstice-dor.jpg" alt="Éclair Couture Solstice d'Or" class="boutique-card-img" loading="lazy" />
+            </div>
+            <div class="boutique-card-body">
+              <div class="boutique-tag-row">
+                <span class="dietary-tag">Piedmont Hazelnut</span>
+                <span class="dietary-tag tag-accent">Choux Craquelin</span>
+              </div>
+              <h3 class="font-serif-display" style="font-size: 1.35rem; margin-bottom: 0.5rem; color: var(--text-primary);">Éclair Couture Solstice d'Or</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 1.25rem;">
+                Golden choux pastry with roasted Piedmont hazelnut praliné and sparkling 24k gold dusting.
+              </p>
+              <div class="boutique-card-footer">
+                <span class="boutique-price">€12.50</span>
+                <a href="contact.html?item=eclair-solstice" class="btn btn-secondary btn-sm">Order Pickup</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Afternoon Tea & Tasting Salon Banner -->
+    <section class="section" style="background: var(--bg-tertiary); padding: 5rem 0;" aria-label="Salon de Thé Experience">
+      <div class="container">
+        <div style="background: var(--bg-surface); border-radius: 28px; padding: clamp(2rem, 5vw, 4rem); border: 1px solid var(--border-color); box-shadow: var(--shadow-luxury); display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
+          <div>
+            <span style="font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--accent-gold); display: block; margin-bottom: 0.6rem;">Le Salon Privé</span>
+            <h2 class="font-serif-display" style="font-size: clamp(2rem, 3.2vw, 2.8rem); line-height: 1.2; margin-bottom: 1.2rem;">
+              Afternoon Tea &amp; Champagne Tasting
+            </h2>
+            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.75rem;">
+              Experience the intimate charm of our Parisian tasting room. Reserve a curated afternoon tea flight featuring five sweet and savory creations paired with biodynamic Grand Cru champagnes and rare teas.
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="tasting.html" class="btn btn-primary"><span class="btn-sparkle">✦</span> Book Salon Reservation</a>
+              <a href="contact.html" class="btn btn-secondary">Private Salon Buyout</a>
+            </div>
+          </div>
+          <div style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-medium); border: 1px solid var(--border-color);">
+            <img src="assets/images/hero-tasting.jpg" alt="Maison Élysée Afternoon Tea Salon Table" style="width: 100%; height: 340px; object-fit: cover; display: block;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- White-Glove Courier & Corporate Gifting Section -->
+    <section class="section" style="padding: 5rem 0;" aria-label="White Glove Delivery and Concierge">
+      <div class="container">
+        
+        <div style="text-align: center; max-width: 650px; margin: 0 auto 3.5rem;">
+          <span style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent-gold); display: block; margin-bottom: 0.6rem;">White-Glove Hospitality</span>
+          <h2 class="font-serif-display" style="font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.2; margin-bottom: 1rem;">Flawless Delivery &amp; Corporate Favors</h2>
+          <p style="color: var(--text-secondary); line-height: 1.65;">
+            Whether presenting gifts to distinguished guests or celebrating milestone achievements, our concierge handles every detail with discretion and refinement.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+          
+          <div class="card-luxury" style="padding: 2.2rem; border-radius: 20px; background: var(--bg-surface); border: 1px solid var(--border-color);">
+            <span style="font-size: 2.2rem; display: block; margin-bottom: 1rem;">❄️</span>
+            <h3 class="font-serif-display" style="font-size: 1.3rem; margin-bottom: 0.6rem; color: var(--text-primary);">Thermal Courier Van</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+              Delivered within sealed climate-controlled vanity trunks strictly kept at 12°C to safeguard delicate mousses and sugar structures.
+            </p>
+          </div>
+
+          <div class="card-luxury" style="padding: 2.2rem; border-radius: 20px; background: var(--bg-surface); border: 1px solid var(--border-color);">
+            <span style="font-size: 2.2rem; display: block; margin-bottom: 1rem;">🎀</span>
+            <h3 class="font-serif-display" style="font-size: 1.3rem; margin-bottom: 0.6rem; color: var(--text-primary);">Monogrammed Badges</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+              Custom edible crests, embossed silk ribbon tags, and handwritten calligraphed cards for wedding couples and luxury brand galas.
+            </p>
+          </div>
+
+          <div class="card-luxury" style="padding: 2.2rem; border-radius: 20px; background: var(--bg-surface); border: 1px solid var(--border-color);">
+            <span style="font-size: 2.2rem; display: block; margin-bottom: 1rem;">🍸</span>
+            <h3 class="font-serif-display" style="font-size: 1.3rem; margin-bottom: 0.6rem; color: var(--text-primary);">Event Dessert Tables</h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+              Full white-glove setup including vintage pedestal stands, floral integration, and dedicated pastry service attendants.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Boutique FAQ Accordion -->
+    <section class="section" style="background: var(--bg-secondary); padding: 5rem 0;" aria-label="Boutique Frequently Asked Questions">
+      <div class="container" style="max-width: 860px;">
+        
+        <div style="text-align: center; margin-bottom: 3.5rem;">
+          <span style="font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent-gold); display: block; margin-bottom: 0.6rem;">Customer Assistance</span>
+          <h2 class="font-serif-display" style="font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.2;">Boutique &amp; Ordering Questions</h2>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          
+          <details class="faq-item" style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 14px; padding: 1.25rem 1.5rem; cursor: pointer;">
+            <summary style="font-weight: 600; font-size: 1.05rem; color: var(--text-primary); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              <span>How long do your macarons and fresh entremets stay fresh?</span>
+              <span style="color: var(--accent-gold); font-size: 1.2rem;">+</span>
+            </summary>
+            <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6;">
+              Our macarons maintain optimal texture for up to 5 days when stored refrigerated inside their sealed box. Single entremets are freshly prepared and best enjoyed within 36 hours.
+            </p>
+          </details>
+
+          <details class="faq-item" style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 14px; padding: 1.25rem 1.5rem; cursor: pointer;">
+            <summary style="font-weight: 600; font-size: 1.05rem; color: var(--text-primary); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              <span>Do you offer gluten-free and allergen-sensitive selections?</span>
+              <span style="color: var(--accent-gold); font-size: 1.2rem;">+</span>
+            </summary>
+            <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6;">
+              Yes! All our traditional macarons are naturally made with 100% almond flour without wheat gluten. We also offer certified nut-free and dairy-free bespoke boxes upon 24 hours advance notice.
+            </p>
+          </details>
+
+          <details class="faq-item" style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 14px; padding: 1.25rem 1.5rem; cursor: pointer;">
+            <summary style="font-weight: 600; font-size: 1.05rem; color: var(--text-primary); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+              <span>What is the lead time for same-day boutique orders?</span>
+              <span style="color: var(--accent-gold); font-size: 1.2rem;">+</span>
+            </summary>
+            <p style="margin-top: 1rem; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6;">
+              Daily boutique items placed before 14:00 can be dispatched via our Paris refrigerated courier for same-day evening delivery. Boutique pickup at 740 Grand Avenue is ready within 45 minutes.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand-logo footer-brand-logo" aria-label="Maison Élysée Homepage">
+            <img src="assets/images/logo-elysee.svg" alt="Maison Élysée Crest" class="brand-logo-icon" width="44" height="44" />
+            <div class="brand-text-wrap">
+              <span class="brand-title" style="font-size: 1.6rem;">Maison Élysée</span>
+              <span class="brand-subtitle">Luxury Cakes &amp; Confections</span>
+            </div>
+          </a>
+          <p style="font-size: 0.9rem; max-width: 340px; margin-bottom: 1.5rem;">
+            Bespoke wedding cakes, organic sugar botanical sculptures, and dessert tables for luxury celebrations worldwide.
+          </p>
+          <p style="font-size: 0.85rem; color: var(--text-muted);">
+            740 Grand Avenue, Suite 400<br />
+            By appointment only for couples &amp; planners.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html" class="footer-link">Home 1 (Couture Studio)</a></li>
+            <li><a href="home2.html" class="footer-link">Home 2 (Petite Patisserie)</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio &amp; Gallery</a></li>
+            <li><a href="about.html" class="footer-link">The Studio Story</a></li>
+            <li><a href="services.html" class="footer-link">Bespoke Offerings</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Experiences</h4>
+          <ul class="footer-nav">
+            <li><a href="tasting.html" class="footer-link">Tasting Appointments</a></li>
+            <li><a href="#box-builder" class="footer-link">Gift Box Builder</a></li>
+            <li><a href="blog.html" class="footer-link">Studio Journal</a></li>
+            <li><a href="contact.html" class="footer-link">Contact &amp; Coverage</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Maison Gazette &amp; Updates</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+            Subscribe to receive our annual bridal dessert trend forecast and seasonal tasting release dates.
+          </p>
+          <form class="newsletter-form" style="display: flex; gap: 0.5rem;" aria-label="Newsletter subscription form">
+            <input type="email" placeholder="Your email address" required class="form-input" style="padding: 0.6rem 0.85rem; font-size: 0.85rem;" aria-label="Email address" />
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Maison Élysée Luxury Cake Studio. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="terms.html" class="footer-link">Terms of Commission</a>
+          <a href="accessibility.html" class="footer-link">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Interactive Script for Home 2 Boutique Builder & Category Filter -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Box Builder Interactive Logic
+      let currentCapacity = 6;
+      let currentBasePrice = 38;
+      let currentTotalCount = 0;
+
+      const sizeCards = document.querySelectorAll('.size-card');
+      const presCards = document.querySelectorAll('.pres-card');
+      const boxCapDisplay = document.getElementById('boxCapDisplay');
+      const boxCountDisplay = document.getElementById('boxCountDisplay');
+      const boxTotalPrice = document.getElementById('boxTotalPrice');
+      const qtyVals = document.querySelectorAll('.qty-val');
+      const autoFillBtn = document.getElementById('autoFillBtn');
+      const reserveBoxBtn = document.getElementById('reserveBoxBtn');
+
+      // Size Selection
+      sizeCards.forEach(card => {
+        card.addEventListener('click', () => {
+          sizeCards.forEach(c => c.classList.remove('active'));
+          card.classList.add('active');
+          currentCapacity = parseInt(card.getAttribute('data-capacity'), 10) || 6;
+          currentBasePrice = parseInt(card.getAttribute('data-base-price'), 10) || 38;
+          if (boxCapDisplay) boxCapDisplay.textContent = currentCapacity;
+          updateTotals();
+        });
+      });
+
+      // Presentation Selection
+      presCards.forEach(card => {
+        card.addEventListener('click', () => {
+          presCards.forEach(c => c.classList.remove('active'));
+          card.classList.add('active');
+        });
+      });
+
+      // Item Quantity Buttons
+      document.querySelectorAll('.qty-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const action = btn.getAttribute('data-action');
+          const qtyElem = btn.parentElement.querySelector('.qty-val');
+          let currentQty = parseInt(qtyElem.textContent, 10) || 0;
+
+          if (action === 'increase') {
+            if (currentTotalCount < currentCapacity) {
+              currentQty++;
+              qtyElem.textContent = currentQty;
+            } else {
+              alert('Box capacity reached (' + currentCapacity + ' pieces). Select a larger box size or remove an item.');
+            }
+          } else if (action === 'decrease') {
+            if (currentQty > 0) {
+              currentQty--;
+              qtyElem.textContent = currentQty;
+            }
+          }
+          updateTotals();
+        });
+      });
+
+      function updateTotals() {
+        let total = 0;
+        qtyVals.forEach(q => {
+          total += parseInt(q.textContent, 10) || 0;
+        });
+        currentTotalCount = total;
+        if (boxCountDisplay) boxCountDisplay.textContent = currentTotalCount;
+        if (boxTotalPrice) boxTotalPrice.textContent = '€' + currentBasePrice.toFixed(2);
+      }
+
+      // Auto-fill Chef Selection
+      if (autoFillBtn) {
+        autoFillBtn.addEventListener('click', () => {
+          qtyVals.forEach(q => { q.textContent = '0'; });
+          const itemsCount = qtyVals.length;
+          let remaining = currentCapacity;
+          let i = 0;
+          while (remaining > 0) {
+            const current = parseInt(qtyVals[i % itemsCount].textContent, 10) || 0;
+            qtyVals[i % itemsCount].textContent = current + 1;
+            remaining--;
+            i++;
+          }
+          updateTotals();
+        });
+      }
+
+      // Reserve Box Action
+      if (reserveBoxBtn) {
+        reserveBoxBtn.addEventListener('click', () => {
+          if (currentTotalCount === 0) {
+            alert('Please select at least 1 item or click "Auto-Fill Chef Selection" first.');
+            return;
+          }
+          window.location.href = 'contact.html?type=custom-box&capacity=' + currentCapacity;
+        });
+      }
+
+      // 2. Boutique Menu Category Filter
+      const filterBtns = document.querySelectorAll('.boutique-filter-btn');
+      const boutiqueCards = document.querySelectorAll('.boutique-card');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-filter');
+          boutiqueCards.forEach(card => {
+            const cat = card.getAttribute('data-category');
+            if (filter === 'all' || cat === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

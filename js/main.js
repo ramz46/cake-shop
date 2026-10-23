@@ -350,6 +350,63 @@
     }
   });
 
+  // --- 5b. Interactive Navigation Dropdown (Desktop & Mobile Drawer) ---
+  const dropdownContainers = document.querySelectorAll('.nav-item.has-dropdown');
+  dropdownContainers.forEach(container => {
+    const toggle = container.querySelector('.dropdown-toggle');
+    const menu = container.querySelector('.nav-dropdown-menu');
+    if (!toggle || !menu) return;
+
+    // Accessibility attributes & keyboard focus
+    container.addEventListener('mouseenter', () => {
+      toggle.setAttribute('aria-expanded', 'true');
+    });
+
+    container.addEventListener('mouseleave', () => {
+      toggle.setAttribute('aria-expanded', 'false');
+      container.classList.remove('is-open');
+    });
+
+    // Touch support / click toggle
+    toggle.addEventListener('click', (e) => {
+      const isTouch = window.matchMedia && window.matchMedia('(hover: none)').matches;
+      if (isTouch) {
+        e.preventDefault();
+        const isOpen = container.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      }
+    });
+  });
+
+  // Close desktop dropdown on outside click
+  document.addEventListener('click', (e) => {
+    dropdownContainers.forEach(container => {
+      if (!container.contains(e.target)) {
+        container.classList.remove('is-open');
+        const toggle = container.querySelector('.dropdown-toggle');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  // Mobile Drawer Dropdown Accordion
+  const drawerDropdownBtns = document.querySelectorAll('.drawer-dropdown-btn');
+  drawerDropdownBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', !isExpanded);
+      const subnav = btn.parentElement ? btn.parentElement.querySelector('.drawer-subnav') : null;
+      if (subnav) {
+        if (isExpanded) {
+          subnav.style.display = 'none';
+        } else {
+          subnav.style.display = 'flex';
+        }
+      }
+    });
+  });
+
   // --- 6. Cinematic Scroll-Reveal Observer & Grid Stagger System ---
   let revealObserver = null;
 
@@ -481,42 +538,62 @@
     });
   }
 
+  // Helper to scroll smoothly to an element accounting for site header
+  function scrollToElement(targetEl, smooth = true) {
+    if (!targetEl) return;
+    const siteHeader = document.querySelector('.site-header');
+    const headerOffset = (siteHeader ? siteHeader.offsetHeight : 80) + 16;
+    if (window.lenisInstance) {
+      window.lenisInstance.scrollTo(targetEl, { offset: -headerOffset, duration: smooth ? 1.15 : 0 });
+    } else {
+      const elementPosition = targetEl.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: smooth ? 'smooth' : 'auto'
+      });
+    }
+  }
+
   // --- 9. Smooth In-Page Anchor Navigation & Home Return ---
   function initSmoothAnchors() {
-    // Smooth scroll for all hash anchor links
-    document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
+    // Smooth scroll for all in-page anchors and same-page hash links (e.g. tasting.html#flavor-builder)
+    const allHashLinks = document.querySelectorAll('a[href*="#"]');
+    allHashLinks.forEach(anchor => {
+      const href = anchor.getAttribute('href');
+      if (!href || href === '#' || href === '#!') return;
+
       anchor.addEventListener('click', function (e) {
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        if (targetId === '#main-content') {
-          e.preventDefault();
-          if (window.lenisInstance) {
-            window.lenisInstance.scrollTo(0, { duration: 1.15 });
-          } else {
-            window.scrollTo({
-              top: 0,
-              behavior: 'smooth'
-            });
-          }
-          return;
-        }
-        const targetEl = document.querySelector(targetId);
-        if (targetEl) {
-          e.preventDefault();
-          const siteHeader = document.querySelector('.site-header');
-          const headerOffset = (siteHeader ? siteHeader.offsetHeight : 80) + 12;
+        const hashIndex = href.indexOf('#');
+        if (hashIndex === -1) return;
+        const pagePart = href.substring(0, hashIndex);
+        const hashPart = href.substring(hashIndex);
 
-          if (window.lenisInstance) {
-            window.lenisInstance.scrollTo(targetEl, { offset: -headerOffset, duration: 1.15 });
-          } else {
-            const elementPosition = targetEl.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        // Check if link points to the current page
+        const currentFile = window.location.pathname.split('/').pop() || 'index.html';
+        const isCurrentPage = pagePart === '' || pagePart === currentFile || pagePart === './' + currentFile || pagePart === './';
 
-            window.scrollTo({
-              top: offsetPosition,
-              behavior: 'smooth'
-            });
+        if (isCurrentPage && hashPart) {
+          if (hashPart === '#main-content') {
+            e.preventDefault();
+            if (window.lenisInstance) {
+              window.lenisInstance.scrollTo(0, { duration: 1.15 });
+            } else {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            return;
           }
+
+          try {
+            const targetEl = document.querySelector(hashPart);
+            if (targetEl) {
+              e.preventDefault();
+              scrollToElement(targetEl, true);
+              if (history.pushState) {
+                history.pushState(null, '', hashPart);
+              }
+            }
+          } catch (err) {}
         }
       });
     });
@@ -543,6 +620,25 @@
         }
       });
     });
+  }
+
+  // Handle cross-page arrival with hash (e.g. tasting.html#flavor-builder)
+  function handleCrossPageHashScroll() {
+    if (window.location.hash && window.location.hash !== '#main-content') {
+      const targetHash = window.location.hash;
+      const attemptScroll = () => {
+        try {
+          const targetEl = document.querySelector(targetHash);
+          if (targetEl) {
+            scrollToElement(targetEl, true);
+          }
+        } catch (e) {}
+      };
+      // Try sequentially as preloader dismisses
+      setTimeout(attemptScroll, 200);
+      setTimeout(attemptScroll, 600);
+      setTimeout(attemptScroll, 1200);
+    }
   }
 
   // --- 10. FAQs Accordion ---
@@ -1107,6 +1203,13 @@
 
     const magneticBtns = document.querySelectorAll('.magnetic-btn');
     magneticBtns.forEach(btn => {
+      // Exclude nav CTA button so hover uses pure CSS elevation and is never sticky
+      if (btn.classList.contains('nav-cta-btn')) {
+        btn.classList.remove('magnetic-btn');
+        btn.style.transform = '';
+        return;
+      }
+
       btn.addEventListener('mousemove', (e) => {
         const rect = btn.getBoundingClientRect();
         const centerX = rect.left + rect.width / 2;
@@ -1124,7 +1227,7 @@
 
       btn.addEventListener('mouseleave', () => {
         btn.style.transition = 'transform 0.45s cubic-bezier(0.2, 1, 0.3, 1), box-shadow 0.28s ease';
-        btn.style.transform = 'translate3d(0, 0, 0)';
+        btn.style.transform = '';
       });
     });
   }
@@ -1298,5 +1401,6 @@
     initHomeLightbox();
     initHeroShowcaseSwitcher();
     initAboutHeroShowcase();
+    handleCrossPageHashScroll();
   });
 })();

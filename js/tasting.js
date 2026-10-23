@@ -96,18 +96,50 @@
     const sealText = document.getElementById('sealMonogramText');
     const sealDate = document.getElementById('sealDateText');
 
+    function adjustMonogramFit() {
+      if (!sealText) return;
+      const text = sealText.textContent.trim();
+      const len = text.length;
+      if (len <= 3) {
+        sealText.style.fontSize = '';
+      } else if (len <= 5) {
+        sealText.style.fontSize = '1.75rem';
+      } else if (len <= 7) {
+        sealText.style.fontSize = '1.45rem';
+      } else {
+        sealText.style.fontSize = '1.2rem';
+      }
+    }
+
+    function adjustDateFit() {
+      if (!sealDate) return;
+      const text = sealDate.textContent.trim();
+      const len = text.length;
+      if (len <= 9) {
+        sealDate.style.fontSize = '';
+      } else if (len <= 12) {
+        sealDate.style.fontSize = '0.52rem';
+      } else {
+        sealDate.style.fontSize = '0.45rem';
+      }
+    }
+
     if (initialsInput && sealText) {
       initialsInput.addEventListener('input', (e) => {
         const val = e.target.value.trim().toUpperCase() || 'E & L';
         sealText.textContent = val;
+        adjustMonogramFit();
       });
+      adjustMonogramFit();
     }
 
     if (dateInput && sealDate) {
       dateInput.addEventListener('input', (e) => {
         const val = e.target.value.trim().toUpperCase() || 'OCTOBER 2026';
         sealDate.textContent = val;
+        adjustDateFit();
       });
+      adjustDateFit();
     }
   }
 

@@ -19,9 +19,9 @@
   --bg-glass: rgba(248, 245, 236, 0.88);
   --bg-card-hover: #FFFFFF;
 
-  --text-primary: #163328;
-  --text-secondary: #3F574A;
-  --text-muted: #53685C;
+  --text-primary: #0E231B;
+  --text-secondary: #273E32;
+  --text-muted: #42594D;
   --text-inverse: #F8F5EC;
 
   --primary-emerald: #047857;
@@ -29,10 +29,10 @@
   --primary-emerald-light: #10B981;
   --primary-emerald-glow: rgba(4, 120, 87, 0.22);
 
-  --accent-gold: #98702D;
-  --accent-gold-light: #B88B43;
-  --accent-gold-dark: #7A561D;
-  --accent-gold-glow: rgba(152, 112, 45, 0.20);
+  --accent-gold: #684612;
+  --accent-gold-light: #8E6523;
+  --accent-gold-dark: #4A2E07;
+  --accent-gold-glow: rgba(104, 70, 18, 0.20);
   --accent-champagne: #D4AF65;
 
   --border-color: #DCDCCF;
@@ -61,7 +61,7 @@
                radial-gradient(circle at 15% 80%, rgba(152, 112, 45, 0.05) 0%, transparent 50%);
 
   /* Typography Stacks */
-  --font-serif-display: 'Italiana', 'Playfair Display', Georgia, serif;
+  --font-serif-display: 'Playfair Display', 'Cormorant Garamond', 'Italiana', Georgia, serif;
   --font-serif-cinzel: 'Cinzel', 'Cinzel Decorative', Georgia, serif;
   --font-serif-editorial: 'Cormorant Garamond', Georgia, serif;
   --font-serif-fraunces: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
@@ -75,8 +75,8 @@
 
   /* Font Aesthetics Modes (Interactive Typography Feature) */
   --theme-heading-font: var(--font-serif-display);
-  --letter-spacing-headline: 0.04em;
-  --heading-font-weight: 400;
+  --letter-spacing-headline: 0.015em;
+  --heading-font-weight: 700;
 
   /* Transitions & Fluid Easing Tokens */
   --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
@@ -164,33 +164,33 @@
 
 /* Typographic Aesthetic Modes (Interactive feature) */
 body[data-font-style="haute-editorial"] {
-  --theme-heading-font: 'Italiana', serif;
-  --letter-spacing-headline: 0.05em;
-  --heading-font-weight: 400;
+  --theme-heading-font: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --letter-spacing-headline: 0.015em;
+  --heading-font-weight: 700;
 }
 
 body[data-font-style="imperial-palace"] {
   --theme-heading-font: 'Cinzel Decorative', 'Cinzel', serif;
-  --letter-spacing-headline: 0.08em;
-  --heading-font-weight: 600;
+  --letter-spacing-headline: 0.05em;
+  --heading-font-weight: 700;
 }
 
 body[data-font-style="romantic-classic"] {
   --theme-heading-font: 'Playfair Display', serif;
-  --letter-spacing-headline: 0.02em;
-  --heading-font-weight: 600;
+  --letter-spacing-headline: 0.015em;
+  --heading-font-weight: 700;
 }
 
 body[data-font-style="sculptural-serif"] {
   --theme-heading-font: 'Cormorant Garamond', serif;
-  --letter-spacing-headline: 0.06em;
-  --heading-font-weight: 500;
+  --letter-spacing-headline: 0.03em;
+  --heading-font-weight: 700;
 }
 
 body[data-font-style="couture-flair"] {
   --theme-heading-font: 'Fraunces', serif;
-  --letter-spacing-headline: 0.02em;
-  --heading-font-weight: 500;
+  --letter-spacing-headline: 0.015em;
+  --heading-font-weight: 700;
 }
 
 /* ==========================================================================
@@ -235,7 +235,8 @@ body {
   color: var(--text-primary);
   line-height: 1.65;
   transition: background-color var(--transition-smooth), color var(--transition-smooth);
-  overflow-x: clip;
+  overflow-x: visible;
+  overflow-y: visible;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -245,6 +246,7 @@ main {
   flex: 1 0 auto;
   width: 100%;
   position: relative;
+  overflow-x: clip;
 }
 
 /* Smooth anchor target offsets so sections never scroll under or above the header */
@@ -299,31 +301,40 @@ main {
    ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--theme-heading-font);
-  font-weight: var(--heading-font-weight);
+  font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.15;
+  line-height: 1.2;
   letter-spacing: var(--letter-spacing-headline);
   text-wrap: balance;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   transition: letter-spacing var(--transition-smooth), font-family var(--transition-smooth);
 }
 
 h1 {
-  font-size: clamp(2.1rem, 3.4vw, 3.25rem);
-  line-height: 1.2;
+  font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.18;
 }
 
 h2 {
-  font-size: clamp(1.85rem, 3.2vw + 0.3rem, 2.85rem);
+  font-size: clamp(1.95rem, 3.2vw + 0.3rem, 2.9rem);
+  font-weight: 700;
+  line-height: 1.22;
 }
 
 h3 {
   font-size: clamp(1.35rem, 2vw + 0.2rem, 1.85rem);
+  font-weight: 700;
+  line-height: 1.3;
 }
 
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-family: var(--font-serif-editorial);
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -331,6 +342,7 @@ p {
   color: var(--text-secondary);
   font-size: 1.025rem;
   line-height: 1.7;
+  font-weight: 450;
 }
 
 a {
@@ -473,22 +485,32 @@ h2 .font-script,
 .subheading-editorial {
   font-family: var(--font-sans);
   text-transform: uppercase;
-  font-size: 0.75rem;
-  letter-spacing: 0.28em;
-  font-weight: 600;
-  color: var(--accent-gold);
+  font-size: 0.82rem;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  color: #5C3D10;
   display: flex;
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 0.85rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 .subheading-editorial::before {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 1px;
-  background-color: var(--accent-gold);
+  width: 28px;
+  height: 1.5px;
+  background-color: #7E5216;
+}
+
+[data-theme="dark"] .subheading-editorial {
+  color: #E5C788;
+}
+
+[data-theme="dark"] .subheading-editorial::before {
+  background-color: #D4AF65;
 }
 
 [dir="rtl"] .subheading-editorial::before {
@@ -497,9 +519,12 @@ h2 .font-script,
 [dir="rtl"] .subheading-editorial::after {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 1px;
-  background-color: var(--accent-gold);
+  width: 28px;
+  height: 1.5px;
+  background-color: #7E5216;
+}
+[data-theme="dark"][dir="rtl"] .subheading-editorial::after {
+  background-color: #D4AF65;
 }
 
 /* Living Gold Shimmer Keyframe */
@@ -509,29 +534,49 @@ h2 .font-script,
   100% { background-position: 0% 50%; }
 }
 
-/* Gold Shimmer Text Effect on Headings */
+/* Gold Shimmer Text Effect on Headings - High Contrast */
 .text-gold-shimmer {
+  background: linear-gradient(135deg, #5B3A0D 0%, #7E5216 26%, #A06F25 50%, #764C12 76%, #4A2B05 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  animation: shimmerSweep 6s ease-in-out infinite;
+}
+
+[data-theme="dark"] .text-gold-shimmer {
   background: linear-gradient(135deg, var(--accent-gold-light) 0%, var(--accent-champagne) 30%, var(--accent-gold) 60%, var(--accent-gold-dark) 100%);
   background-size: 250% auto;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block;
-  position: relative;
-  animation: shimmerSweep 6s ease-in-out infinite;
 }
 
-/* Emerald to Gold Gradient Text Highlight */
+/* Emerald to Gold Gradient Text Highlight - High Contrast AAA Clarity */
 .gradient-emerald-gold {
-  background: linear-gradient(135deg, var(--primary-emerald) 0%, var(--accent-champagne) 40%, var(--accent-gold) 70%, var(--primary-emerald-light) 100%);
-  background-size: 250% auto;
+  background: linear-gradient(135deg, #0A4A36 0%, #16654A 26%, #6B4712 52%, #115940 76%, #063A29 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   position: relative;
-  font-weight: inherit;
+  font-weight: 700;
+  -webkit-text-stroke: 0.25px rgba(10, 74, 54, 0.4);
   animation: shimmerSweep 7s ease-in-out infinite;
+}
+
+[data-theme="dark"] .gradient-emerald-gold {
+  background: linear-gradient(135deg, #34D399 0%, #F5D38A 35%, #6EE7B7 70%, #E8C174 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.25px rgba(245, 211, 138, 0.35);
+  filter: drop-shadow(0 2px 8px rgba(16, 185, 129, 0.25));
 }
 
 /* Interactive Magnetic Letter Effect */

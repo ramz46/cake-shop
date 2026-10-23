@@ -62,7 +62,29 @@
       </a>
 
       <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
-        <a href="index.html" class="nav-link" data-i18n="navHome">Home</a>
+        <div class="nav-item has-dropdown">
+          <a href="index.html" class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+            <span data-i18n="navHome">Home</span>
+            <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="currentColor" aria-hidden="true"><path d="M0 0h10L5 6z"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="index.html" class="dropdown-item">
+              <span class="dropdown-badge">Home 1</span>
+              <div class="dropdown-content">
+                <span class="dropdown-title">Haute Couture Studio</span>
+                <span class="dropdown-desc">Grand bespoke wedding gateaux &amp; architectural sugar art</span>
+              </div>
+            </a>
+            <a href="home2.html" class="dropdown-item">
+              <span class="dropdown-badge badge-gold">Home 2</span>
+              <div class="dropdown-content">
+                <span class="dropdown-title">Petite Patisserie &amp; Boutique</span>
+                <span class="dropdown-desc">Artisan confections, curated gift boxes &amp; boutique ordering</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="portfolio.html" class="nav-link" data-i18n="navPortfolio">Portfolio</a>
         <a href="about.html" class="nav-link active" data-i18n="navAbout">About</a>
         <a href="services.html" class="nav-link" data-i18n="navServices">Services</a>
@@ -72,15 +94,10 @@
       </nav>
 
       <div class="header-actions">
-        <!-- In-Navbar Theme & Direction Controls -->
+        <!-- In-Navbar Theme Controls: KEEP THEME ICONS ONLY -->
         <div class="nav-controls">
           <button class="toggle-btn" data-action="toggle-theme" aria-label="Toggle theme mode" title="Switch Theme">
             <span class="theme-icon">☀️</span>
-            <span class="theme-label">Light</span>
-          </button>
-          <button class="toggle-btn dir-toggle-btn" data-action="toggle-direction" aria-label="Toggle text direction between LTR and RTL" title="Switch between LTR and RTL layout">
-            <span class="dir-icon">⇄</span>
-            <span class="dir-label">LTR</span>
           </button>
         </div>
 
@@ -107,7 +124,16 @@
           <button class="drawer-close" aria-label="Close menu">&times;</button>
         </div>
         <ul class="drawer-nav">
-          <li><a href="index.html" class="drawer-nav-link">Home</a></li>
+          <li class="drawer-has-dropdown">
+            <button class="drawer-dropdown-btn" aria-expanded="true">
+              <span>Home Experiences</span>
+              <svg class="drawer-arrow" width="10" height="6" viewBox="0 0 10 6" fill="currentColor"><path d="M0 0h10L5 6z"/></svg>
+            </button>
+            <ul class="drawer-subnav">
+              <li><a href="index.html" class="drawer-nav-link">Home 1 — Couture Studio</a></li>
+              <li><a href="home2.html" class="drawer-nav-link">Home 2 — Boutique Patisserie</a></li>
+            </ul>
+          </li>
           <li><a href="portfolio.html" class="drawer-nav-link">Portfolio &amp; Gallery</a></li>
           <li><a href="about.html" class="drawer-nav-link active">About Studio &amp; Story</a></li>
           <li><a href="services.html" class="drawer-nav-link">Services &amp; Offerings</a></li>
@@ -227,39 +253,39 @@
           </p>
         </div>
 
-        <div class="grid-3">
+        <div class="grid-3 team-grid">
           <!-- Member 1 -->
-          <div class="card-luxury">
-            <div style="aspect-ratio: 1; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1.5rem; background: var(--bg-secondary);">
-              <img src="assets/images/chef-genevieve.jpg" alt="Chef Geneviève Moreau portrait" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+          <div class="card-luxury team-card">
+            <div class="team-card-media">
+              <img src="assets/images/chef-genevieve.jpg" alt="Chef Geneviève Moreau portrait" loading="lazy" />
             </div>
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.25rem;">Geneviève Moreau</h3>
-            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.75rem;">Founder &amp; Creative Director</p>
-            <p style="font-size: 0.9rem; line-height: 1.6;">
+            <h3 class="team-card-name">Geneviève Moreau</h3>
+            <p class="team-card-role">Founder &amp; Creative Director</p>
+            <p class="team-card-bio">
               Trained in Paris under French culinary masters, Geneviève brings an uncompromising passion for sculptural form and balanced, non-cloying flavor profiles.
             </p>
           </div>
 
           <!-- Member 2 -->
-          <div class="card-luxury">
-            <div style="aspect-ratio: 1; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1.5rem; background: var(--bg-secondary);">
-              <img src="assets/images/team-henri.jpg" alt="Henri Dubois portrait" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+          <div class="card-luxury team-card">
+            <div class="team-card-media">
+              <img src="assets/images/team-henri.jpg" alt="Henri Dubois portrait" loading="lazy" />
             </div>
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.25rem;">Henri Dubois</h3>
-            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.75rem;">Head of Structural Architecture &amp; Flavor</p>
-            <p style="font-size: 0.9rem; line-height: 1.6;">
+            <h3 class="team-card-name">Henri Dubois</h3>
+            <p class="team-card-role">Head of Structural Architecture &amp; Flavor</p>
+            <p class="team-card-bio">
               Henri oversees our structural food-grade armatures for cantilevered and monumental 6+ tier cakes, ensuring seamless stability and moist, melt-in-the-mouth texture.
             </p>
           </div>
 
           <!-- Member 3 -->
-          <div class="card-luxury">
-            <div style="aspect-ratio: 1; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1.5rem; background: var(--bg-secondary);">
-              <img src="assets/images/team-amelie.jpg" alt="Amélie Laurent portrait" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+          <div class="card-luxury team-card">
+            <div class="team-card-media">
+              <img src="assets/images/team-amelie.jpg" alt="Amélie Laurent portrait" loading="lazy" />
             </div>
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.25rem;">Amélie Laurent</h3>
-            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent-gold); font-weight: 600; margin-bottom: 0.75rem;">Lead Botanical Sugar Florist</p>
-            <p style="font-size: 0.9rem; line-height: 1.6;">
+            <h3 class="team-card-name">Amélie Laurent</h3>
+            <p class="team-card-role">Lead Botanical Sugar Florist</p>
+            <p class="team-card-bio">
               Amélie spends up to forty hours per commission hand-pulling wafer-thin sugar petals, matching wedding floral varieties with botanical precision.
             </p>
           </div>
@@ -278,57 +304,57 @@
           </p>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 2.5rem; max-width: 900px; margin: 0 auto;">
+        <div class="process-steps-list">
           <!-- Step 1 -->
-          <div style="display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: flex-start; padding: 2rem; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
-            <div style="font-family: var(--theme-heading-font); font-size: 2.8rem; color: var(--accent-gold); line-height: 1;">01</div>
-            <div>
-              <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">The Creative Brief &amp; Date Reservation</h3>
-              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65;">
+          <div class="process-step-box">
+            <div class="process-step-num">01</div>
+            <div class="process-step-content">
+              <h3 class="process-step-title">The Creative Brief &amp; Date Reservation</h3>
+              <p class="process-step-desc">
                 We review your wedding date, venue architecture, guest count, and floral moodboards. A $350 initial studio deposit secures your weekend date on our limited production calendar.
               </p>
             </div>
           </div>
 
           <!-- Step 2 -->
-          <div style="display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: flex-start; padding: 2rem; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
-            <div style="font-family: var(--theme-heading-font); font-size: 2.8rem; color: var(--accent-gold); line-height: 1;">02</div>
-            <div>
-              <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">The Private Tasting Experience</h3>
-              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65;">
+          <div class="process-step-box">
+            <div class="process-step-num">02</div>
+            <div class="process-step-content">
+              <h3 class="process-step-title">The Private Tasting Experience</h3>
+              <p class="process-step-desc">
                 Join us in our private studio for a curated tasting of six bespoke cake flavor pairings accompanied by sommelier-selected Premier Cru Champagne or botanical sparkling infusions.
               </p>
             </div>
           </div>
 
           <!-- Step 3 -->
-          <div style="display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: flex-start; padding: 2rem; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
-            <div style="font-family: var(--theme-heading-font); font-size: 2.8rem; color: var(--accent-gold); line-height: 1;">03</div>
-            <div>
-              <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Architectural Design &amp; Watercolor Rendering</h3>
-              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65;">
+          <div class="process-step-box">
+            <div class="process-step-num">03</div>
+            <div class="process-step-content">
+              <h3 class="process-step-title">Architectural Design &amp; Watercolor Rendering</h3>
+              <p class="process-step-desc">
                 Chef Geneviève produces a hand-painted watercolor architectural elevation of your cake, detailing tier ratios, bas-relief motifs, sugar flower placement, and linen color coordinates.
               </p>
             </div>
           </div>
 
           <!-- Step 4 -->
-          <div style="display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: flex-start; padding: 2rem; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
-            <div style="font-family: var(--theme-heading-font); font-size: 2.8rem; color: var(--accent-gold); line-height: 1;">04</div>
-            <div>
-              <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Artisanal Baking &amp; Sugar Craft</h3>
-              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65;">
+          <div class="process-step-box">
+            <div class="process-step-num">04</div>
+            <div class="process-step-content">
+              <h3 class="process-step-title">Artisanal Baking &amp; Sugar Craft</h3>
+              <p class="process-step-desc">
                 Sugar florals and bas-relief lacework are sculpted weeks in advance. Sponges are baked completely fresh 48 hours prior to your wedding using pure organic Normandy butter and Grand Cru chocolate.
               </p>
             </div>
           </div>
 
           <!-- Step 5 -->
-          <div style="display: grid; grid-template-columns: 80px 1fr; gap: 2rem; align-items: flex-start; padding: 2rem; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border-light); box-shadow: var(--shadow-subtle);">
-            <div style="font-family: var(--theme-heading-font); font-size: 2.8rem; color: var(--accent-gold); line-height: 1;">05</div>
-            <div>
-              <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">White-Glove Delivery &amp; On-Site Styling</h3>
-              <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65;">
+          <div class="process-step-box">
+            <div class="process-step-num">05</div>
+            <div class="process-step-content">
+              <h3 class="process-step-title">White-Glove Delivery &amp; On-Site Styling</h3>
+              <p class="process-step-desc">
                 Delivered in climate-controlled transport vehicles. Our master pastry decorator personally installs the cake on your reception table, adds final floral touches, and coordinates with your caterer for precision slicing.
               </p>
             </div>
@@ -417,7 +443,8 @@
         <div>
           <h4 class="footer-col-title">Navigation</h4>
           <ul class="footer-nav">
-            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="index.html" class="footer-link">Home 1 (Couture Studio)</a></li>
+            <li><a href="home2.html" class="footer-link">Home 2 (Petite Patisserie)</a></li>
             <li><a href="portfolio.html" class="footer-link">Portfolio &amp; Gallery</a></li>
             <li><a href="about.html" class="footer-link">The Studio Story</a></li>
             <li><a href="services.html" class="footer-link">Bespoke Offerings</a></li>
@@ -435,7 +462,7 @@
         </div>
 
         <div>
-          <h4 class="footer-col-title">The Studio Journal</h4>
+          <h4 class="footer-col-title">Maison Gazette &amp; Updates</h4>
           <p style="font-size: 0.85rem; margin-bottom: 1rem;">
             Subscribe to receive our annual bridal dessert trend forecast and seasonal tasting release dates.
           </p>
@@ -451,9 +478,9 @@
           &copy; 2026 Maison Élysée Luxury Cake Studio. All rights reserved.
         </div>
         <div style="display: flex; gap: 1.5rem;">
-          <a href="#" class="footer-link">Privacy Policy</a>
-          <a href="#" class="footer-link">Terms of Commission</a>
-          <a href="#" class="footer-link">Accessibility Statement</a>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="terms.html" class="footer-link">Terms of Commission</a>
+          <a href="accessibility.html" class="footer-link">Accessibility Statement</a>
         </div>
       </div>
     </div>

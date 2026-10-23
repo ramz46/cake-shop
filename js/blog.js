@@ -10,6 +10,7 @@
     {
       id: 1,
       slug: 'architectural-wedding-cake-trends-2026',
+      url: 'blog-post-architectural-trends.html',
       title: 'Architectural Centerpieces & Sugar Lace: 2026 Wedding Cake Trends',
       category: 'design',
       categoryLabel: 'Design Inspiration',
@@ -21,6 +22,7 @@
     {
       id: 2,
       slug: 'the-art-of-bespoke-flavor-pairings',
+      url: 'blog-post-flavor-pairings.html',
       title: 'Beyond Vanilla: Curating an Indulgent Wedding Flavor Palette',
       category: 'flavors',
       categoryLabel: 'Flavor Trends',
@@ -32,6 +34,7 @@
     {
       id: 3,
       slug: 'wedding-cake-portion-and-tier-guide',
+      url: 'blog-post-portion-guide.html',
       title: 'The Essential Wedding Cake Size & Portion Guide',
       category: 'planning',
       categoryLabel: 'Wedding Planning',
@@ -44,6 +47,7 @@
     {
       id: 4,
       slug: 'curating-an-unforgettable-dessert-table',
+      url: 'blog-post-dessert-table.html',
       title: 'Styling an Opulent Wedding Dessert Table & Pastries',
       category: 'design',
       categoryLabel: 'Design Inspiration',
@@ -55,6 +59,7 @@
     {
       id: 5,
       slug: 'outdoor-summer-wedding-cake-logistics',
+      url: 'blog-post-summer-delivery.html',
       title: 'White-Glove Summer Delivery: Protecting Cakes Against Heat & Humidity',
       category: 'planning',
       categoryLabel: 'Wedding Planning',
@@ -66,6 +71,7 @@
     {
       id: 6,
       slug: 'history-of-royal-royal-icing',
+      url: 'blog-post-lambeth-icing.html',
       title: 'The Lost Art of Lambeth & Royal Icing Embroidery',
       category: 'flavors',
       categoryLabel: 'Pastry Craft',
@@ -147,14 +153,14 @@
             <span>${item.readTime}</span>
           </div>
           <h3 style="font-size: 1.35rem; margin-bottom: 0.85rem; line-height: 1.3;">
-            <a href="blog-post.html?slug=${item.slug}" style="text-decoration: none; color: inherit;">${item.title}</a>
+            <a href="${item.url}" style="text-decoration: none; color: inherit;">${item.title}</a>
           </h3>
           <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; flex-grow: 1;">${item.excerpt}</p>
           <div style="border-top: 1px solid var(--border-hairline); padding-top: 1rem; display: flex; align-items: center; justify-content: space-between;">
-            <a href="blog-post.html?slug=${item.slug}" class="btn-ghost" style="font-size: 0.825rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.4rem; padding: 0;">
+            <a href="${item.url}" class="btn-ghost" style="font-size: 0.825rem; font-weight: 600; display: inline-flex; align-items: center; gap: 0.4rem; padding: 0;">
               Read Full Article <span>→</span>
             </a>
-            <button class="btn-ghost share-article-btn" data-title="${item.title}" data-slug="${item.slug}" aria-label="Share article" style="padding: 0; color: var(--text-muted);">
+            <button class="btn-ghost share-article-btn" data-title="${item.title}" data-slug="${item.slug}" data-url="${item.url}" aria-label="Share article" style="padding: 0; color: var(--text-muted);">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
             </button>
           </div>
@@ -167,13 +173,14 @@
       btn.addEventListener('click', (e) => {
         e.preventDefault();
         const title = btn.dataset.title;
+        const pageUrl = new URL(btn.dataset.url || 'blog-post-architectural-trends.html', window.location.href).href;
         if (navigator.share) {
           navigator.share({
             title: title,
-            url: window.location.href
+            url: pageUrl
           }).catch(() => {});
         } else {
-          navigator.clipboard.writeText(window.location.href);
+          navigator.clipboard.writeText(pageUrl);
           if (window.showToast) {
             window.showToast(`Link to "${title}" copied to clipboard!`, 'success');
           }
@@ -206,12 +213,12 @@
   // Hero Image Frame click to lead story
   if (heroImageFrame) {
     heroImageFrame.addEventListener('click', () => {
-      window.location.href = 'blog-post.html?slug=architectural-wedding-cake-trends-2026';
+      window.location.href = 'blog-post-architectural-trends.html';
     });
     heroImageFrame.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        window.location.href = 'blog-post.html?slug=architectural-wedding-cake-trends-2026';
+        window.location.href = 'blog-post-architectural-trends.html';
       }
     });
   }
